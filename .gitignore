@@ -1,8 +1,16 @@
 .vscode/
 *.swp
 *.cr.mti
+
+*/work/_test
+*/work/*.qdb
+*/work/*.qpg
+*/work/*.qtl
+*/work/_info
+*/work/_vmake
 work/_test
 work/*.qdb
 work/*.qpg
 work/*.qtl
+work/_info
 work/_vmake
