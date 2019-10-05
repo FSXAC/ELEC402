@@ -25,7 +25,6 @@ set_attribute library {slow_vdd1v0_basicCells.lib}
 read_hdl -sv ./in/countdown.sv
 read_hdl -sv ./in/decoders.sv
 read_hdl -sv ./in/dff.sv
-read_hdl -sv ./in/div7.sv
 read_hdl -sv ./in/fsm.sv
 
 # Elaboration validates the syntax
