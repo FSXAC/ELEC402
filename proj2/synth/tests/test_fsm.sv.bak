@@ -504,9 +504,9 @@ module test_fsm();
 			#4;
 			sensor_data = i;
 			@(posedge fsm_output_valid);
-			assert (fsm_output == (i * 4 * 64)); /* 4 cycles * 64 aperture mult */
 			#4;
 			#3;
+			assert (fsm_output == (i * 4 * 64)); /* 4 cycles * 64 aperture mult */
 		end
 		shutter_btn = 0;
 		#40;
