@@ -1,9 +1,7 @@
 # This is a Tool Command Language file that tells
 # the tool how to perform the synthesis
 
-# This file is to be ran from the root directory of the project
-# (where the setup_local.csh script is located)
-# Make sure to run that first.
+# This file is to be run from the "synth" folder as the root directory
 
 puts "======================"
 puts "| Synthesis Started! |"
@@ -26,9 +24,9 @@ set_attribute library {slow_vdd1v0_basicCells.lib}
 # Read Verilog and RTL Code
 read_hdl -sv ./in/countdown.sv
 read_hdl -sv ./in/decoders.sv
-read_hdl -sv ./dff.sv
-read_hdl -sv ./div7.sv
-read_hdl -sv ./fsm.sv
+read_hdl -sv ./in/dff.sv
+read_hdl -sv ./in/div7.sv
+read_hdl -sv ./in/fsm.sv
 
 # Elaboration validates the syntax
 elaborate $DESIGN
