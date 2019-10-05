@@ -1,0 +1,17 @@
+#------------------------------------------------------
+#  Cadence libraries:
+#------------------------------------------------------
+DEFINE smgBasicMSLib $(inst_root_with:tools/dfII/bin/virtuoso)/tools/dfII/etc/smg/smgLibs/smgBasicMSLib
+DEFINE smgAdvancedMSLib $(inst_root_with:tools/dfII/bin/virtuoso)/tools/dfII/etc/smg/smgLibs/smgAdvancedMSLib
+
+
+#------------------------------
+#  Point-tool library:
+#------------------------------
+DEFINE connectLib $(inst_root_with:tools/bin/irun)/tools/affirma_ams/etc/connect_lib/connectLib
+DEFINE avTech     $(inst_root_with:tools/assura/etc)/tools/assura/etc/avtech/avTech
+
+INCLUDE $PDKDIR/gpdk045/cds.lib
+INCLUDE $PDKDIR/gsclib045/cds.lib
+INCLUDE $PDKDIR/giolib045/cds.lib
+#------------------------------------------ User libraries start here:
