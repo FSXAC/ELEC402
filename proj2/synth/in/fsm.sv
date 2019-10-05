@@ -36,7 +36,7 @@ module fsm(
 	/* Countdown module required for waiting on shutter (based on shutter speed) */
 	/* Let SCD stand for shutter-countdown */
 	logic scd_reset, scd_wr_en, scd_cd_en;
-	logic [31:0] scd_cycles;
+	logic [8:0] scd_cycles;
 	logic scd_done;
 
 	countdown COUNTDOWN_MODULE(
@@ -68,14 +68,16 @@ module fsm(
 		.input_setting(aperture_setting),
 		.output_multiplier(aperture_multiplier)
 	);
+	logic [7:0] shutter_setting_output;
 	shutter_decoder SHUTTER_DECODER(
 		.input_setting(shutter_setting),
-		.shutter_wait_time(scd_cycles)
+		.shutter_wait_time(shutter_setting_output)
 	);
+	assign scd_cycles = {shutter_setting_output, 1'b0};
 
 	/* State definitions */
 	/* Since we're not using more than 32 states, 5 bit width should be more than enough */
-	enum logic[4:0] {
+	enum logic[3:0] {
 		ST_IDLE,                /* [1]  The idle / reset state */
 
 		ST_APERTURE_PRIORITY,   /* [2]  The default home state for aperture priority mode */

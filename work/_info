@@ -10,25 +10,25 @@ cModel Technology
 Z0 dc:/Users/mansu/OneDrive/Documents/2020 UBC/ELEC 402/Projects/Project 1
 vaperture_decoder
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1570302711
+Z2 !s110 1570308189
 !i10b 1
-!s100 eOE9d5Z>5hH>FN5d;8`Nh2
-Im3N>mcNL9oF;ZHE?b_7_Z1
+!s100 hog=b3BJ=E@Z2S3_3f20^1
+In3A3j9268oBiBVcJ7fR5K0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 !s105 fsm_map_sv_unit
+Z4 !s105 decoders_sv_unit
 S1
 R0
-Z5 w1570300512
-Z6 8c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\out\fsm_map.sv
-Z7 Fc:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\out\fsm_map.sv
-L0 312
+Z5 w1570307526
+Z6 8c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\in\decoders.sv
+Z7 Fc:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\in\decoders.sv
+L0 3
 Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1570302711.000000
-Z10 !s107 c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\out\fsm_map.sv|
-Z11 !s90 -nologo|-work|work|c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\out\fsm_map.sv|
+Z9 !s108 1570308189.000000
+Z10 !s107 c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\in\decoders.sv|
+Z11 !s90 -nologo|-work|work|c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\in\decoders.sv|
 !i113 1
 Z12 o-nologo -work work
 Z13 tCvgOpt 0
@@ -36,300 +36,300 @@ vcountdown
 R1
 R2
 !i10b 1
-!s100 CG:9QF1mfQ40<?XjFH`];0
-I`aQ2Z4Qn7ek5aIhaYn]_c2
+!s100 8oPE7d6g`T0[V=DLPfbFU2
+IYW0@?bATD5@Y:2?c61Kh<3
 R3
-R4
+!s105 countdown_sv_unit
 S1
 R0
-R5
-R6
-R7
-L0 98
+w1570308016
+8c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\in\countdown.sv
+Fc:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\in\countdown.sv
+L0 11
 R8
 r1
 !s85 0
 31
 R9
-R10
-R11
+!s107 c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\in\countdown.sv|
+!s90 -nologo|-work|work|c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\in\countdown.sv|
 !i113 1
 R12
 R13
 vdecrement_unsigned_1
 R1
-R2
+Z14 !s110 1570302711
 !i10b 1
 !s100 HoaUfT8729:H?R82W[m`91
 IE:UgVVmg0f6DkccVIIef]0
 R3
-R4
+Z15 !s105 fsm_map_sv_unit
 S1
 R0
-R5
-R6
-R7
+Z16 w1570300512
+Z17 8c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\out\fsm_map.sv
+Z18 Fc:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\out\fsm_map.sv
 L0 23
 R8
 r1
 !s85 0
 31
-R9
-R10
-R11
+Z19 !s108 1570302711.000000
+Z20 !s107 c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\out\fsm_map.sv|
+Z21 !s90 -nologo|-work|work|c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\out\fsm_map.sv|
 !i113 1
 R12
 R13
 vdecrement_unsigned_1_GENERIC
-Z14 !s110 1570300519
+Z22 !s110 1570300519
 !i10b 1
 !s100 zk`<`=7AXF75X`B7ANWBS1
 I_CAISMGY;3X5VSbGgmBi:1
 R3
 R0
-R5
-Z15 8c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\fv\fsm\dp_info.v
-Z16 Fc:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\fv\fsm\dp_info.v
+R16
+Z23 8c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\fv\fsm\dp_info.v
+Z24 Fc:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\fv\fsm\dp_info.v
 L0 109
 R8
 r1
 !s85 0
 31
-Z17 !s108 1570300519.000000
-Z18 !s107 c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\fv\fsm\dp_info.v|
-Z19 !s90 -nologo|-work|work|c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\fv\fsm\dp_info.v|
+Z25 !s108 1570300519.000000
+Z26 !s107 c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\fv\fsm\dp_info.v|
+Z27 !s90 -nologo|-work|work|c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\fv\fsm\dp_info.v|
 !i113 1
 R12
 R13
 ndecrement_unsigned_1_@g@e@n@e@r@i@c
 vdecrement_unsigned_1_GENERIC_REAL
-R14
+R22
 !i10b 1
 !s100 `@ImUaHbNfKEUa[aDGYCI2
 IWFh^g^mcXFlcK4Ug[niRI3
 R3
 R0
-R5
-R15
 R16
+R23
+R24
 L0 1
 R8
 r1
 !s85 0
 31
-R17
-R18
-R19
+R25
+R26
+R27
 !i113 1
 R12
 R13
 ndecrement_unsigned_1_@g@e@n@e@r@i@c_@r@e@a@l
 vdffs_WIDTH3
 R1
-R2
+R14
 !i10b 1
 !s100 zX[]R<4?DPT14`CQ@SzX31
 IP95mP[AI]2<=;FonS7[m91
 R3
-R4
+R15
 S1
 R0
-R5
-R6
-R7
+R16
+R17
+R18
 L0 6
 R8
 r1
 !s85 0
 31
-R9
-R10
-R11
+R19
+R20
+R21
 !i113 1
 R12
 R13
 ndffs_@w@i@d@t@h3
 vdffs_WIDTH3_65
 R1
-R2
+R14
 !i10b 1
 !s100 R:W?ZLTFA>ljac@>YzeeL1
 IN0EOT2N>CjoG>T4LJAkWi2
 R3
-R4
+R15
 S1
 R0
-R5
-R6
-R7
+R16
+R17
+R18
 L0 392
 R8
 r1
 !s85 0
 31
-R9
-R10
-R11
+R19
+R20
+R21
 !i113 1
 R12
 R13
 ndffs_@w@i@d@t@h3_65
 vfsm
 R1
-R2
+!s110 1570308190
 !i10b 1
-!s100 @3;`Ah^TS>8`TC0<E7m?Z1
-IIaa;=81fdh8ZCAMQbLohJ3
+!s100 IT7Uk0H4FEiUU]c`8cIR_0
+IX0GnfNW^e;QDVkVYF_COB2
 R3
-R4
+!s105 fsm_sv_unit
 S1
 R0
-R5
-R6
-R7
-L0 1122
+w1570307670
+8c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\in\fsm.sv
+Fc:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\in\fsm.sv
+L0 5
 R8
 r1
 !s85 0
 31
-R9
-R10
-R11
+!s108 1570308190.000000
+!s107 c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\in\fsm.sv|
+!s90 -nologo|-work|work|c:\Users\mansu\OneDrive\Documents\2020 UBC\ELEC 402\Projects\Project 1\proj2\synth\in\fsm.sv|
 !i113 1
 R12
 R13
 vmult_unsigned
 R1
-R2
+R14
 !i10b 1
 !s100 BPjDL_S`6ee]FcFG@_PGb2
 I8QHE88;6`FMR`?CENnS5n0
 R3
-R4
+R15
 S1
 R0
-R5
-R6
-R7
+R16
+R17
+R18
 L0 409
 R8
 r1
 !s85 0
 31
-R9
-R10
-R11
+R19
+R20
+R21
 !i113 1
 R12
 R13
 vmult_unsigned_306
 R1
-R2
+R14
 !i10b 1
 !s100 `BQaYK]H9S[zEP_`2R1VN0
 I?N2nkk9BUdUDhV7:IEnSK0
 R3
-R4
+R15
 S1
 R0
-R5
-R6
-R7
+R16
+R17
+R18
 L0 778
 R8
 r1
 !s85 0
 31
-R9
-R10
-R11
+R19
+R20
+R21
 !i113 1
 R12
 R13
 vmult_unsigned_306_GENERIC
-R14
+R22
 !i10b 1
 !s100 GmD`Q350m03nOIFD:7:Mz2
 I<UncUmCFLAj9]EmEzmUhk0
 R3
 R0
-R5
-R15
 R16
+R23
+R24
 L0 1320
 R8
 r1
 !s85 0
 31
-R17
-R18
-R19
+R25
+R26
+R27
 !i113 1
 R12
 R13
 nmult_unsigned_306_@g@e@n@e@r@i@c
 vmult_unsigned_306_GENERIC_REAL
-R14
+R22
 !i10b 1
 !s100 od7jh4E;lo]Q<Md90CdcU2
 IkfBX4NQon4mCJB2Kn_1>c2
 R3
 R0
-R5
-R15
 R16
+R23
+R24
 L0 722
 R8
 r1
 !s85 0
 31
-R17
-R18
-R19
+R25
+R26
+R27
 !i113 1
 R12
 R13
 nmult_unsigned_306_@g@e@n@e@r@i@c_@r@e@a@l
 vmult_unsigned_GENERIC
-R14
+R22
 !i10b 1
 !s100 lGa6Mm6cJ4SUK3A9zJ_CK0
 IFXB:?XliaPLU0Wc0hMWB[3
 R3
 R0
-R5
-R15
 R16
+R23
+R24
 L0 712
 R8
 r1
 !s85 0
 31
-R17
-R18
-R19
+R25
+R26
+R27
 !i113 1
 R12
 R13
 nmult_unsigned_@g@e@n@e@r@i@c
 vmult_unsigned_GENERIC_REAL
-R14
+R22
 !i10b 1
 !s100 =8KQc7FKA3JacLczXD8OU1
 IejbZ4fWg=B[Ghm63i`Elf1
 R3
 R0
-R5
-R15
 R16
+R23
+R24
 L0 119
 R8
 r1
 !s85 0
 31
-R17
-R18
-R19
+R25
+R26
+R27
 !i113 1
 R12
 R13
@@ -338,8 +338,8 @@ vshutter_decoder
 R1
 R2
 !i10b 1
-!s100 6`Qha`>DXL]Em91`OQRk;1
-IS;MhJP3lf02^BQGldB61:2
+!s100 bj`[b4BcOjEOAGTGX]zPM2
+IaKO?0U?OPC6R`KXU27o323
 R3
 R4
 S1
@@ -347,7 +347,7 @@ R0
 R5
 R6
 R7
-L0 340
+L0 13
 R8
 r1
 !s85 0

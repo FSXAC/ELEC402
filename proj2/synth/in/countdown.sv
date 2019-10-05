@@ -12,7 +12,7 @@ module countdown(
     input logic clk,
     input logic reset,
 
-    input logic [31:0] wait_cycles,
+    input logic [8:0] wait_cycles,
     input logic write_enable,
     input logic countdown_enable,
 
@@ -20,7 +20,7 @@ module countdown(
 );
 
     // internal flip flop to hold the countdown number
-    logic [31:0] count;
+    logic [8:0] count;
 
     // sequential logic
     always_ff @(posedge clk) begin

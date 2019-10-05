@@ -12,8 +12,7 @@ endmodule
 /* Therefore we need to subtract from the maximum setting */
 module shutter_decoder(
     input logic [2:0] input_setting,
-    output logic [31:0] shutter_wait_time
+    output logic [7:0] shutter_wait_time
 );
-    parameter BASE_WAIT_CYCLE = 2;
-    assign shutter_wait_time = BASE_WAIT_CYCLE << (7 - input_setting);
+    assign shutter_wait_time = 1 << (7 - input_setting);
 endmodule
