@@ -51,7 +51,7 @@ puts "Runtime and memory after synthesize to map:"
 timestat MAPPED
 
 # Incremental synthesis
-synthesize -to_mapped -eff $MAPP_EFF -incr
+synthesize -to_mapped -eff $MAP_EFF -incr
 
 # Insert tie hi and tie low cells
 insert_tiehilo_cells
