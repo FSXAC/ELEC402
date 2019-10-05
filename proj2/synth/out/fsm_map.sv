@@ -20,293 +20,90 @@ module dffs_WIDTH3(d, q, en, clk, rst);
   INVX1 g59(.A (rst), .Y (n_0));
 endmodule
 
-module decrement_unsigned_1(A, CI, Z);
-  input [31:0] A;
-  input CI;
-  output [31:0] Z;
-  wire [31:0] A;
-  wire CI;
-  wire [31:0] Z;
-  wire n_1, n_3, n_5, n_7, n_9, n_11, n_13, n_15;
-  wire n_17, n_19, n_21, n_23, n_25, n_27, n_29, n_31;
-  wire n_33, n_35, n_37, n_39, n_41, n_43, n_45, n_47;
-  wire n_49, n_51, n_53, n_55, n_57, n_59;
-  XNOR2X1 g521(.A (A[31]), .B (n_59), .Y (Z[31]));
-  OAI2BB1X1 g522(.A0N (A[30]), .A1N (n_57), .B0 (n_59), .Y (Z[30]));
-  OR2X1 g523(.A (A[30]), .B (n_57), .Y (n_59));
-  OAI2BB1X1 g524(.A0N (A[29]), .A1N (n_55), .B0 (n_57), .Y (Z[29]));
-  OR2X1 g525(.A (A[29]), .B (n_55), .Y (n_57));
-  OAI2BB1X1 g526(.A0N (A[28]), .A1N (n_53), .B0 (n_55), .Y (Z[28]));
-  OR2X1 g527(.A (A[28]), .B (n_53), .Y (n_55));
-  OAI2BB1X1 g528(.A0N (A[27]), .A1N (n_51), .B0 (n_53), .Y (Z[27]));
-  OR2X1 g529(.A (A[27]), .B (n_51), .Y (n_53));
-  OAI2BB1X1 g530(.A0N (A[26]), .A1N (n_49), .B0 (n_51), .Y (Z[26]));
-  OR2X1 g531(.A (A[26]), .B (n_49), .Y (n_51));
-  OAI2BB1X1 g532(.A0N (A[25]), .A1N (n_47), .B0 (n_49), .Y (Z[25]));
-  OR2X1 g533(.A (A[25]), .B (n_47), .Y (n_49));
-  OAI2BB1X1 g534(.A0N (A[24]), .A1N (n_45), .B0 (n_47), .Y (Z[24]));
-  OR2X1 g535(.A (A[24]), .B (n_45), .Y (n_47));
-  OAI2BB1X1 g536(.A0N (A[23]), .A1N (n_43), .B0 (n_45), .Y (Z[23]));
-  OR2X1 g537(.A (A[23]), .B (n_43), .Y (n_45));
-  OAI2BB1X1 g538(.A0N (A[22]), .A1N (n_41), .B0 (n_43), .Y (Z[22]));
-  OR2X1 g539(.A (A[22]), .B (n_41), .Y (n_43));
-  OAI2BB1X1 g540(.A0N (A[21]), .A1N (n_39), .B0 (n_41), .Y (Z[21]));
-  OR2X1 g541(.A (A[21]), .B (n_39), .Y (n_41));
-  OAI2BB1X1 g542(.A0N (A[20]), .A1N (n_37), .B0 (n_39), .Y (Z[20]));
-  OR2X1 g543(.A (A[20]), .B (n_37), .Y (n_39));
-  OAI2BB1X1 g544(.A0N (A[19]), .A1N (n_35), .B0 (n_37), .Y (Z[19]));
-  OR2X1 g545(.A (A[19]), .B (n_35), .Y (n_37));
-  OAI2BB1X1 g546(.A0N (A[18]), .A1N (n_33), .B0 (n_35), .Y (Z[18]));
-  OR2X1 g547(.A (A[18]), .B (n_33), .Y (n_35));
-  OAI2BB1X1 g548(.A0N (A[17]), .A1N (n_31), .B0 (n_33), .Y (Z[17]));
-  OR2X1 g549(.A (A[17]), .B (n_31), .Y (n_33));
-  OAI2BB1X1 g550(.A0N (A[16]), .A1N (n_29), .B0 (n_31), .Y (Z[16]));
-  OR2X1 g551(.A (A[16]), .B (n_29), .Y (n_31));
-  OAI2BB1X1 g552(.A0N (A[15]), .A1N (n_27), .B0 (n_29), .Y (Z[15]));
-  OR2X1 g553(.A (A[15]), .B (n_27), .Y (n_29));
-  OAI2BB1X1 g554(.A0N (A[14]), .A1N (n_25), .B0 (n_27), .Y (Z[14]));
-  OR2X1 g555(.A (A[14]), .B (n_25), .Y (n_27));
-  OAI2BB1X1 g556(.A0N (A[13]), .A1N (n_23), .B0 (n_25), .Y (Z[13]));
-  OR2X1 g557(.A (A[13]), .B (n_23), .Y (n_25));
-  OAI2BB1X1 g558(.A0N (A[12]), .A1N (n_21), .B0 (n_23), .Y (Z[12]));
-  OR2X1 g559(.A (A[12]), .B (n_21), .Y (n_23));
-  OAI2BB1X1 g560(.A0N (A[11]), .A1N (n_19), .B0 (n_21), .Y (Z[11]));
-  OR2X1 g561(.A (A[11]), .B (n_19), .Y (n_21));
-  OAI2BB1X1 g562(.A0N (A[10]), .A1N (n_17), .B0 (n_19), .Y (Z[10]));
-  OR2X1 g563(.A (A[10]), .B (n_17), .Y (n_19));
-  OAI2BB1X1 g564(.A0N (A[9]), .A1N (n_15), .B0 (n_17), .Y (Z[9]));
-  OR2X1 g565(.A (A[9]), .B (n_15), .Y (n_17));
-  OAI2BB1X1 g566(.A0N (A[8]), .A1N (n_13), .B0 (n_15), .Y (Z[8]));
-  OR2X1 g567(.A (A[8]), .B (n_13), .Y (n_15));
-  OAI2BB1X1 g568(.A0N (A[7]), .A1N (n_11), .B0 (n_13), .Y (Z[7]));
-  OR2X1 g569(.A (A[7]), .B (n_11), .Y (n_13));
-  OAI2BB1X1 g570(.A0N (A[6]), .A1N (n_9), .B0 (n_11), .Y (Z[6]));
-  OR2X1 g571(.A (A[6]), .B (n_9), .Y (n_11));
-  OAI2BB1X1 g572(.A0N (A[5]), .A1N (n_7), .B0 (n_9), .Y (Z[5]));
-  OR2X1 g573(.A (A[5]), .B (n_7), .Y (n_9));
-  OAI2BB1X1 g574(.A0N (A[4]), .A1N (n_5), .B0 (n_7), .Y (Z[4]));
-  OR2X1 g575(.A (A[4]), .B (n_5), .Y (n_7));
-  OAI2BB1X1 g576(.A0N (A[3]), .A1N (n_3), .B0 (n_5), .Y (Z[3]));
-  OR2X1 g577(.A (A[3]), .B (n_3), .Y (n_5));
-  OAI2BB1X1 g578(.A0N (A[2]), .A1N (n_1), .B0 (n_3), .Y (Z[2]));
-  OR2X1 g579(.A (A[2]), .B (n_1), .Y (n_3));
-  OAI2BB1X1 g580(.A0N (A[0]), .A1N (A[1]), .B0 (n_1), .Y (Z[1]));
-  OR2X1 g581(.A (A[0]), .B (A[1]), .Y (n_1));
-  TIELO tie_0_cell(.Y (Z[0]));
-endmodule
-
 module countdown(clk, reset, wait_cycles, write_enable,
      countdown_enable, done);
   input clk, reset, write_enable, countdown_enable;
-  input [31:0] wait_cycles;
+  input [8:0] wait_cycles;
   output done;
   wire clk, reset, write_enable, countdown_enable;
-  wire [31:0] wait_cycles;
+  wire [8:0] wait_cycles;
   wire done;
-  wire [31:0] count;
-  wire UNCONNECTED, logic_1_1_net, n_0, n_1, n_2, n_3, n_4, n_5;
-  wire n_6, n_8, n_10, n_11, n_12, n_13, n_14, n_15;
-  wire n_16, n_17, n_18, n_19, n_20, n_21, n_22, n_23;
-  wire n_24, n_25, n_26, n_27, n_28, n_29, n_30, n_31;
-  wire n_32, n_33, n_34, n_35, n_36, n_37, n_38, n_39;
-  wire n_40, n_41, n_42, n_43, n_44, n_45, n_46, n_47;
-  wire n_48, n_49, n_50, n_51, n_52, n_53, n_54, n_55;
-  wire n_56, n_57, n_58, n_59, n_60, n_61, n_62, n_63;
-  wire n_64, n_65, n_66, n_67, n_68, n_69, n_70, n_71;
-  wire n_72, n_73, n_74, n_75, n_76, n_77, n_78, n_79;
-  wire n_80, n_81, n_82, n_83, n_84, n_85, n_86, n_87;
-  wire n_88, n_89, n_90, n_91, n_92, n_93, n_94, n_95;
-  wire n_96, n_97, n_98, n_99, n_100, n_101, n_103, n_104;
-  wire n_105, n_106, n_107, n_108, n_109, n_110, n_111, n_112;
-  wire n_113, n_114, n_115, n_116, n_117, n_118, n_119, n_120;
-  wire n_121, n_122, n_123, n_124, n_125, n_126, n_127, n_128;
-  wire n_129, n_130, n_131, n_132, n_133, n_147;
-  decrement_unsigned_1 dec_sub_35_32_2(.A (count), .CI (logic_1_1_net),
-       .Z ({n_103, n_104, n_105, n_106, n_107, n_108, n_109, n_110,
-       n_111, n_112, n_113, n_114, n_115, n_116, n_117, n_118, n_119,
-       n_120, n_121, n_122, n_123, n_124, n_125, n_126, n_127, n_128,
-       n_129, n_130, n_131, n_132, n_133, UNCONNECTED}));
-  AND4XL g1155(.A (n_97), .B (n_93), .C (n_99), .D (n_101), .Y (done));
-  NOR4X1 g1156(.A (count[0]), .B (count[1]), .C (count[20]), .D
-       (n_100), .Y (n_101));
-  NAND4XL g1157(.A (n_94), .B (n_96), .C (n_98), .D (n_95), .Y (n_100));
-  NOR4X1 g1158(.A (count[28]), .B (count[30]), .C (count[31]), .D
-       (n_92), .Y (n_99));
-  NOR4X1 g1159(.A (count[14]), .B (count[13]), .C (count[15]), .D
-       (count[12]), .Y (n_98));
-  NOR4X1 g1160(.A (count[23]), .B (count[22]), .C (count[24]), .D
-       (count[21]), .Y (n_97));
-  NOR4X1 g1161(.A (count[10]), .B (count[9]), .C (count[11]), .D
-       (count[8]), .Y (n_96));
-  NOR4X1 g1162(.A (count[18]), .B (count[7]), .C (count[19]), .D
-       (count[6]), .Y (n_95));
-  NOR4X1 g1163(.A (count[16]), .B (count[5]), .C (count[17]), .D
-       (count[4]), .Y (n_94));
-  NOR4X1 g1164(.A (count[27]), .B (count[26]), .C (count[29]), .D
-       (count[25]), .Y (n_93));
-  OR2X1 g1165(.A (count[2]), .B (count[3]), .Y (n_92));
-  DFFHQX1 \count_reg[0] (.CK (clk), .D (n_45), .Q (count[0]));
-  DFFHQX1 \count_reg[10] (.CK (clk), .D (n_77), .Q (count[10]));
-  DFFHQX1 \count_reg[11] (.CK (clk), .D (n_71), .Q (count[11]));
-  DFFHQX1 \count_reg[12] (.CK (clk), .D (n_73), .Q (count[12]));
-  DFFHQX1 \count_reg[13] (.CK (clk), .D (n_70), .Q (count[13]));
-  DFFHQX1 \count_reg[14] (.CK (clk), .D (n_69), .Q (count[14]));
-  DFFHQX1 \count_reg[15] (.CK (clk), .D (n_68), .Q (count[15]));
-  DFFHQX1 \count_reg[16] (.CK (clk), .D (n_89), .Q (count[16]));
-  DFFHQX1 \count_reg[17] (.CK (clk), .D (n_87), .Q (count[17]));
-  DFFHQX1 \count_reg[18] (.CK (clk), .D (n_88), .Q (count[18]));
-  DFFHQX1 \count_reg[19] (.CK (clk), .D (n_86), .Q (count[19]));
-  DFFHQX1 \count_reg[1] (.CK (clk), .D (n_46), .Q (count[1]));
-  DFFHQX1 \count_reg[20] (.CK (clk), .D (n_85), .Q (count[20]));
-  DFFHQX1 \count_reg[21] (.CK (clk), .D (n_84), .Q (count[21]));
-  DFFHQX1 \count_reg[22] (.CK (clk), .D (n_82), .Q (count[22]));
-  DFFHQX1 \count_reg[23] (.CK (clk), .D (n_83), .Q (count[23]));
-  DFFHQX1 \count_reg[24] (.CK (clk), .D (n_81), .Q (count[24]));
-  DFFHQX1 \count_reg[25] (.CK (clk), .D (n_80), .Q (count[25]));
-  DFFHQX1 \count_reg[26] (.CK (clk), .D (n_79), .Q (count[26]));
-  DFFHQX1 \count_reg[27] (.CK (clk), .D (n_78), .Q (count[27]));
-  DFFHQX1 \count_reg[28] (.CK (clk), .D (n_76), .Q (count[28]));
-  DFFHQX1 \count_reg[29] (.CK (clk), .D (n_75), .Q (count[29]));
-  DFFHQX1 \count_reg[2] (.CK (clk), .D (n_47), .Q (count[2]));
-  DFFHQX1 \count_reg[30] (.CK (clk), .D (n_74), .Q (count[30]));
-  DFFHQX1 \count_reg[31] (.CK (clk), .D (n_72), .Q (count[31]));
-  DFFHQX1 \count_reg[3] (.CK (clk), .D (n_52), .Q (count[3]));
-  DFFHQX1 \count_reg[4] (.CK (clk), .D (n_55), .Q (count[4]));
-  DFFHQX1 \count_reg[5] (.CK (clk), .D (n_60), .Q (count[5]));
-  DFFHQX1 \count_reg[6] (.CK (clk), .D (n_63), .Q (count[6]));
-  DFFHQX1 \count_reg[7] (.CK (clk), .D (n_67), .Q (count[7]));
-  DFFHQX1 \count_reg[8] (.CK (clk), .D (n_91), .Q (count[8]));
-  DFFHQX1 \count_reg[9] (.CK (clk), .D (n_90), .Q (count[9]));
-  OAI211X1 g1789(.A0 (n_4), .A1 (n_64), .B0 (n_42), .C0 (n_66), .Y
-       (n_91));
-  NAND2XL g1790(.A (n_66), .B (n_40), .Y (n_90));
-  NAND2XL g1791(.A (n_66), .B (n_43), .Y (n_89));
-  NAND2XL g1792(.A (n_66), .B (n_39), .Y (n_88));
-  NAND2XL g1793(.A (n_66), .B (n_41), .Y (n_87));
-  NAND2XL g1794(.A (n_66), .B (n_38), .Y (n_86));
-  NAND2XL g1795(.A (n_66), .B (n_37), .Y (n_85));
-  NAND2XL g1796(.A (n_66), .B (n_36), .Y (n_84));
-  NAND2XL g1797(.A (n_66), .B (n_33), .Y (n_83));
-  NAND2XL g1798(.A (n_66), .B (n_34), .Y (n_82));
-  NAND2XL g1799(.A (n_66), .B (n_32), .Y (n_81));
-  NAND2XL g1800(.A (n_66), .B (n_31), .Y (n_80));
-  NAND2XL g1801(.A (n_66), .B (n_30), .Y (n_79));
-  NAND2XL g1802(.A (n_66), .B (n_29), .Y (n_78));
-  NAND2XL g1803(.A (n_66), .B (n_35), .Y (n_77));
-  NAND2XL g1804(.A (n_66), .B (n_28), .Y (n_76));
-  NAND2XL g1805(.A (n_66), .B (n_27), .Y (n_75));
-  NAND2XL g1806(.A (n_66), .B (n_25), .Y (n_74));
-  NAND2XL g1807(.A (n_66), .B (n_24), .Y (n_73));
-  NAND2XL g1808(.A (n_66), .B (n_23), .Y (n_72));
-  NAND2XL g1809(.A (n_66), .B (n_26), .Y (n_71));
-  NAND2XL g1810(.A (n_66), .B (n_21), .Y (n_70));
-  NAND2XL g1811(.A (n_66), .B (n_22), .Y (n_69));
-  NAND2XL g1812(.A (n_66), .B (n_20), .Y (n_68));
-  OAI2BB1X1 g1813(.A0N (n_147), .A1N (n_127), .B0 (n_65), .Y (n_67));
-  OR3X1 g1814(.A (wait_cycles[8]), .B (n_4), .C (n_61), .Y (n_66));
-  AOI22XL g1815(.A0 (n_3), .A1 (n_62), .B0 (count[7]), .B1 (n_10), .Y
-       (n_65));
-  NAND2XL g1817(.A (wait_cycles[8]), .B (n_61), .Y (n_64));
-  OAI211X1 g1818(.A0 (n_4), .A1 (n_59), .B0 (n_19), .C0 (n_18), .Y
-       (n_63));
-  OAI2BB1X1 g1819(.A0N (wait_cycles[7]), .A1N (n_57), .B0 (n_61), .Y
-       (n_62));
-  OR2X1 g1821(.A (wait_cycles[7]), .B (n_57), .Y (n_61));
-  OAI2BB1X1 g1822(.A0N (n_129), .A1N (n_147), .B0 (n_58), .Y (n_60));
-  AOI21XL g1823(.A0 (wait_cycles[6]), .A1 (n_53), .B0 (n_56), .Y
-       (n_59));
-  AOI22XL g1824(.A0 (n_3), .A1 (n_54), .B0 (count[5]), .B1 (n_10), .Y
-       (n_58));
-  INVX1 g1826(.A (n_56), .Y (n_57));
-  NOR2XL g1827(.A (wait_cycles[6]), .B (n_53), .Y (n_56));
-  OAI211X1 g1828(.A0 (n_4), .A1 (n_51), .B0 (n_14), .C0 (n_12), .Y
-       (n_55));
-  OAI2BB1X1 g1829(.A0N (wait_cycles[5]), .A1N (n_49), .B0 (n_53), .Y
-       (n_54));
-  OR2X1 g1831(.A (wait_cycles[5]), .B (n_49), .Y (n_53));
-  OAI2BB1X1 g1832(.A0N (n_131), .A1N (n_147), .B0 (n_50), .Y (n_52));
-  AOI21XL g1833(.A0 (wait_cycles[4]), .A1 (n_13), .B0 (n_48), .Y
-       (n_51));
-  AOI22XL g1834(.A0 (n_3), .A1 (n_44), .B0 (count[3]), .B1 (n_10), .Y
-       (n_50));
-  INVX1 g1837(.A (n_48), .Y (n_49));
-  NOR2XL g1838(.A (wait_cycles[4]), .B (n_13), .Y (n_48));
-  OAI211X1 g1840(.A0 (n_5), .A1 (n_4), .B0 (n_11), .C0 (n_15), .Y
-       (n_47));
-  OAI211X1 g1841(.A0 (wait_cycles[1]), .A1 (n_4), .B0 (n_17), .C0
-       (n_16), .Y (n_46));
-  OAI21XL g1842(.A0 (reset), .A1 (n_8), .B0 (n_4), .Y (n_45));
-  OAI2BB1X1 g1843(.A0N (wait_cycles[3]), .A1N (n_1), .B0 (n_13), .Y
-       (n_44));
-  AOI22XL g1844(.A0 (n_147), .A1 (n_118), .B0 (count[16]), .B1 (n_10),
-       .Y (n_43));
-  AOI22XL g1845(.A0 (n_147), .A1 (n_126), .B0 (count[8]), .B1 (n_10),
-       .Y (n_42));
-  AOI22XL g1846(.A0 (n_147), .A1 (n_117), .B0 (count[17]), .B1 (n_10),
-       .Y (n_41));
-  AOI22XL g1847(.A0 (n_147), .A1 (n_125), .B0 (count[9]), .B1 (n_10),
-       .Y (n_40));
-  AOI22XL g1848(.A0 (n_147), .A1 (n_116), .B0 (count[18]), .B1 (n_10),
-       .Y (n_39));
-  AOI22XL g1849(.A0 (n_147), .A1 (n_115), .B0 (count[19]), .B1 (n_10),
-       .Y (n_38));
-  AOI22XL g1850(.A0 (n_147), .A1 (n_114), .B0 (count[20]), .B1 (n_10),
-       .Y (n_37));
-  AOI22XL g1851(.A0 (n_147), .A1 (n_113), .B0 (count[21]), .B1 (n_10),
-       .Y (n_36));
-  AOI22XL g1852(.A0 (n_147), .A1 (n_124), .B0 (count[10]), .B1 (n_10),
-       .Y (n_35));
-  AOI22XL g1853(.A0 (n_147), .A1 (n_112), .B0 (count[22]), .B1 (n_10),
-       .Y (n_34));
-  AOI22XL g1854(.A0 (n_147), .A1 (n_111), .B0 (count[23]), .B1 (n_10),
-       .Y (n_33));
-  AOI22XL g1855(.A0 (n_147), .A1 (n_110), .B0 (count[24]), .B1 (n_10),
-       .Y (n_32));
-  AOI22XL g1856(.A0 (n_147), .A1 (n_109), .B0 (count[25]), .B1 (n_10),
-       .Y (n_31));
-  AOI22XL g1857(.A0 (n_147), .A1 (n_108), .B0 (count[26]), .B1 (n_10),
-       .Y (n_30));
-  AOI22XL g1858(.A0 (n_147), .A1 (n_107), .B0 (count[27]), .B1 (n_10),
-       .Y (n_29));
-  AOI22XL g1859(.A0 (n_147), .A1 (n_106), .B0 (count[28]), .B1 (n_10),
-       .Y (n_28));
-  AOI22XL g1860(.A0 (n_147), .A1 (n_105), .B0 (count[29]), .B1 (n_10),
-       .Y (n_27));
-  AOI22XL g1861(.A0 (n_147), .A1 (n_123), .B0 (count[11]), .B1 (n_10),
-       .Y (n_26));
-  AOI22XL g1862(.A0 (n_147), .A1 (n_104), .B0 (count[30]), .B1 (n_10),
-       .Y (n_25));
-  AOI22XL g1863(.A0 (n_147), .A1 (n_122), .B0 (count[12]), .B1 (n_10),
-       .Y (n_24));
-  AOI22XL g1864(.A0 (n_147), .A1 (n_103), .B0 (count[31]), .B1 (n_10),
-       .Y (n_23));
-  AOI22XL g1865(.A0 (n_147), .A1 (n_120), .B0 (count[14]), .B1 (n_10),
-       .Y (n_22));
-  AOI22XL g1866(.A0 (n_147), .A1 (n_121), .B0 (count[13]), .B1 (n_10),
+  wire [8:0] count;
+  wire n_0, n_1, n_2, n_3, n_4, n_5, n_6, n_7;
+  wire n_8, n_10, n_11, n_12, n_13, n_14, n_15, n_16;
+  wire n_17, n_18, n_19, n_20, n_21, n_22, n_23, n_24;
+  wire n_25, n_26, n_27, n_28, n_29, n_30, n_32, n_33;
+  wire n_34, n_35, n_36, n_37, n_38, n_39, n_40, n_41;
+  wire n_42, n_43, n_44, n_45, n_46, n_47, n_49, n_50;
+  wire n_51, n_57, n_72, n_73;
+  NOR4X1 g374(.A (count[5]), .B (count[4]), .C (count[7]), .D (n_51),
+       .Y (done));
+  NAND2XL g375(.A (n_49), .B (n_50), .Y (n_51));
+  NOR4X1 g376(.A (count[0]), .B (count[1]), .C (count[2]), .D
+       (count[8]), .Y (n_50));
+  NOR2XL g377(.A (count[3]), .B (count[6]), .Y (n_49));
+  INVX1 g378(.A (count[7]), .Y (n_57));
+  DFFHQX1 \count_reg[8] (.CK (clk), .D (n_72), .Q (count[8]));
+  DFFHQX1 \count_reg[7] (.CK (clk), .D (n_47), .Q (count[7]));
+  DFFHQX1 \count_reg[5] (.CK (clk), .D (n_45), .Q (count[5]));
+  OAI222XL g825(.A0 (n_8), .A1 (n_40), .B0 (n_6), .B1 (n_38), .C0
+       (count[7]), .C1 (n_39), .Y (n_47));
+  XNOR2X1 g826(.A (wait_cycles[8]), .B (n_37), .Y (n_46));
+  OAI22XL g827(.A0 (n_6), .A1 (n_42), .B0 (n_8), .B1 (n_24), .Y (n_45));
+  DFFHQX1 \count_reg[4] (.CK (clk), .D (n_43), .Q (count[4]));
+  DFFHQX1 \count_reg[6] (.CK (clk), .D (n_44), .Q (count[6]));
+  OAI221X1 g830(.A0 (n_8), .A1 (n_30), .B0 (n_6), .B1 (n_35), .C0
+       (n_39), .Y (n_44));
+  OAI22XL g831(.A0 (n_6), .A1 (n_34), .B0 (n_8), .B1 (n_19), .Y (n_43));
+  XNOR2X1 g832(.A (count[5]), .B (n_32), .Y (n_42));
+  OAI2BB1X1 g833(.A0N (n_57), .A1N (n_36), .B0 (count[8]), .Y (n_41));
+  AOI21XL g834(.A0 (wait_cycles[7]), .A1 (n_29), .B0 (n_37), .Y (n_40));
+  DFFQXL \count_reg[3] (.CK (clk), .D (n_33), .Q (count[3]));
+  NAND2XL g836(.A (n_5), .B (n_36), .Y (n_39));
+  NAND2BXL g837(.AN (n_36), .B (count[7]), .Y (n_38));
+  NOR2XL g838(.A (wait_cycles[7]), .B (n_29), .Y (n_37));
+  NOR2XL g839(.A (count[6]), .B (n_73), .Y (n_36));
+  NAND2XL g840(.A (count[6]), .B (n_73), .Y (n_35));
+  AOI21XL g841(.A0 (count[4]), .A1 (n_25), .B0 (n_32), .Y (n_34));
+  OAI22XL g842(.A0 (n_6), .A1 (n_27), .B0 (n_8), .B1 (n_14), .Y (n_33));
+  NOR2XL g843(.A (count[4]), .B (n_25), .Y (n_32));
+  AOI21XL g845(.A0 (wait_cycles[6]), .A1 (n_23), .B0 (n_28), .Y (n_30));
+  DFFHQX1 \count_reg[2] (.CK (clk), .D (n_26), .Q (count[2]));
+  INVX1 g847(.A (n_28), .Y (n_29));
+  NOR2XL g848(.A (wait_cycles[6]), .B (n_23), .Y (n_28));
+  OA21X1 g849(.A0 (n_2), .A1 (n_20), .B0 (n_25), .Y (n_27));
+  OAI22XL g850(.A0 (n_6), .A1 (n_22), .B0 (n_10), .B1 (n_8), .Y (n_26));
+  NAND2XL g851(.A (n_2), .B (n_20), .Y (n_25));
+  OA21X1 g852(.A0 (n_0), .A1 (n_18), .B0 (n_23), .Y (n_24));
+  DFFHQX1 \count_reg[1] (.CK (clk), .D (n_21), .Q (count[1]));
+  NAND2XL g854(.A (n_0), .B (n_18), .Y (n_23));
+  AOI21XL g855(.A0 (count[2]), .A1 (n_15), .B0 (n_20), .Y (n_22));
+  OAI22XL g856(.A0 (n_6), .A1 (n_16), .B0 (wait_cycles[1]), .B1 (n_8),
        .Y (n_21));
-  AOI22XL g1867(.A0 (n_147), .A1 (n_119), .B0 (count[15]), .B1 (n_10),
-       .Y (n_20));
-  NAND2XL g1868(.A (n_128), .B (n_147), .Y (n_19));
-  NAND2XL g1869(.A (count[6]), .B (n_10), .Y (n_18));
-  NAND2XL g1870(.A (n_133), .B (n_147), .Y (n_17));
-  NAND2XL g1871(.A (count[1]), .B (n_10), .Y (n_16));
-  NAND2XL g1872(.A (count[2]), .B (n_10), .Y (n_15));
-  NAND2XL g1873(.A (n_130), .B (n_147), .Y (n_14));
-  OR2X1 g1874(.A (wait_cycles[3]), .B (n_1), .Y (n_13));
-  NAND2XL g1875(.A (count[4]), .B (n_10), .Y (n_12));
-  NAND2XL g1876(.A (n_132), .B (n_147), .Y (n_11));
-  NOR2BX2 g1877(.AN (n_6), .B (reset), .Y (n_10));
-  XNOR2X1 g1879(.A (count[0]), .B (n_2), .Y (n_8));
-  NOR2XL g1881(.A (write_enable), .B (n_2), .Y (n_6));
-  AOI21XL g1882(.A0 (wait_cycles[1]), .A1 (wait_cycles[2]), .B0 (n_0),
-       .Y (n_5));
-  INVX1 g1883(.A (n_4), .Y (n_3));
-  NAND2BX1 g1884(.AN (reset), .B (write_enable), .Y (n_4));
-  NOR2BX1 g1885(.AN (countdown_enable), .B (done), .Y (n_2));
-  INVX1 g1886(.A (n_0), .Y (n_1));
-  NOR2XL g1887(.A (wait_cycles[2]), .B (wait_cycles[1]), .Y (n_0));
-  NOR3BX2 g2(.AN (n_2), .B (write_enable), .C (reset), .Y (n_147));
-  TIEHI tie_1_cell(.Y (logic_1_1_net));
+  NOR2XL g857(.A (count[2]), .B (n_15), .Y (n_20));
+  AOI21XL g858(.A0 (wait_cycles[4]), .A1 (n_13), .B0 (n_18), .Y (n_19));
+  DFFHQX1 \count_reg[0] (.CK (clk), .D (n_17), .Q (count[0]));
+  NOR2XL g860(.A (wait_cycles[4]), .B (n_13), .Y (n_18));
+  OAI21XL g861(.A0 (reset), .A1 (n_12), .B0 (n_8), .Y (n_17));
+  OA21X1 g862(.A0 (n_1), .A1 (n_11), .B0 (n_15), .Y (n_16));
+  NAND2XL g863(.A (n_1), .B (n_11), .Y (n_15));
+  OA21X1 g864(.A0 (n_3), .A1 (n_7), .B0 (n_13), .Y (n_14));
+  NAND2XL g865(.A (n_3), .B (n_7), .Y (n_13));
+  AOI21XL g866(.A0 (count[0]), .A1 (n_4), .B0 (n_11), .Y (n_12));
+  NOR2XL g867(.A (count[0]), .B (n_4), .Y (n_11));
+  AOI21XL g868(.A0 (wait_cycles[1]), .A1 (wait_cycles[2]), .B0 (n_7),
+       .Y (n_10));
+  NAND2BXL g870(.AN (reset), .B (write_enable), .Y (n_8));
+  NOR2XL g871(.A (wait_cycles[1]), .B (wait_cycles[2]), .Y (n_7));
+  INVX1 g872(.A (n_5), .Y (n_6));
+  NOR2XL g873(.A (reset), .B (write_enable), .Y (n_5));
+  NAND2BXL g874(.AN (done), .B (countdown_enable), .Y (n_4));
+  INVX1 g875(.A (wait_cycles[3]), .Y (n_3));
+  INVX1 g876(.A (count[3]), .Y (n_2));
+  INVX1 g877(.A (count[1]), .Y (n_1));
+  INVX1 g878(.A (wait_cycles[5]), .Y (n_0));
+  OAI22X1 g2(.A0 (n_8), .A1 (n_46), .B0 (n_6), .B1 (n_41), .Y (n_72));
+  OR3XL g879(.A (n_25), .B (count[5]), .C (count[4]), .Y (n_73));
 endmodule
 
 module aperture_decoder(input_setting, output_multiplier);
@@ -339,71 +136,47 @@ endmodule
 
 module shutter_decoder(input_setting, shutter_wait_time);
   input [2:0] input_setting;
-  output [31:0] shutter_wait_time;
+  output [7:0] shutter_wait_time;
   wire [2:0] input_setting;
-  wire [31:0] shutter_wait_time;
-  wire n_1, n_2, n_3, n_4, n_5;
-  assign shutter_wait_time[0] = shutter_wait_time[31];
-  assign shutter_wait_time[9] = shutter_wait_time[31];
-  assign shutter_wait_time[10] = shutter_wait_time[31];
-  assign shutter_wait_time[11] = shutter_wait_time[31];
-  assign shutter_wait_time[12] = shutter_wait_time[31];
-  assign shutter_wait_time[13] = shutter_wait_time[31];
-  assign shutter_wait_time[14] = shutter_wait_time[31];
-  assign shutter_wait_time[15] = shutter_wait_time[31];
-  assign shutter_wait_time[16] = shutter_wait_time[31];
-  assign shutter_wait_time[17] = shutter_wait_time[31];
-  assign shutter_wait_time[18] = shutter_wait_time[31];
-  assign shutter_wait_time[19] = shutter_wait_time[31];
-  assign shutter_wait_time[20] = shutter_wait_time[31];
-  assign shutter_wait_time[21] = shutter_wait_time[31];
-  assign shutter_wait_time[22] = shutter_wait_time[31];
-  assign shutter_wait_time[23] = shutter_wait_time[31];
-  assign shutter_wait_time[24] = shutter_wait_time[31];
-  assign shutter_wait_time[25] = shutter_wait_time[31];
-  assign shutter_wait_time[26] = shutter_wait_time[31];
-  assign shutter_wait_time[27] = shutter_wait_time[31];
-  assign shutter_wait_time[28] = shutter_wait_time[31];
-  assign shutter_wait_time[29] = shutter_wait_time[31];
-  assign shutter_wait_time[30] = shutter_wait_time[31];
-  NOR2BX1 g504(.AN (n_5), .B (input_setting[1]), .Y
-       (shutter_wait_time[8]));
-  AND2X1 g505(.A (n_5), .B (input_setting[1]), .Y
-       (shutter_wait_time[6]));
-  NOR2X1 g506(.A (n_1), .B (n_3), .Y (shutter_wait_time[1]));
-  NOR2X1 g507(.A (input_setting[1]), .B (n_3), .Y
-       (shutter_wait_time[3]));
-  NOR2X1 g508(.A (n_1), .B (n_4), .Y (shutter_wait_time[5]));
-  NOR2XL g509(.A (input_setting[1]), .B (n_2), .Y
-       (shutter_wait_time[4]));
-  NOR2X1 g510(.A (input_setting[1]), .B (n_4), .Y
+  wire [7:0] shutter_wait_time;
+  wire n_0, n_1, n_2, n_3, n_4;
+  NOR2BX1 g147(.AN (n_4), .B (input_setting[0]), .Y
        (shutter_wait_time[7]));
-  NOR2XL g511(.A (n_1), .B (n_2), .Y (shutter_wait_time[2]));
-  NOR2XL g512(.A (input_setting[2]), .B (input_setting[0]), .Y (n_5));
-  NAND2BXL g513(.AN (input_setting[2]), .B (input_setting[0]), .Y
-       (n_4));
-  NAND2XL g514(.A (input_setting[0]), .B (input_setting[2]), .Y (n_3));
-  NAND2BXL g515(.AN (input_setting[0]), .B (input_setting[2]), .Y
+  AND2X1 g148(.A (n_4), .B (input_setting[0]), .Y
+       (shutter_wait_time[6]));
+  NOR2XL g149(.A (input_setting[0]), .B (n_1), .Y
+       (shutter_wait_time[1]));
+  NOR2X1 g150(.A (n_0), .B (n_1), .Y (shutter_wait_time[0]));
+  NOR2X1 g151(.A (n_0), .B (n_3), .Y (shutter_wait_time[4]));
+  NOR2XL g152(.A (input_setting[0]), .B (n_2), .Y
+       (shutter_wait_time[3]));
+  NOR2X1 g153(.A (n_0), .B (n_2), .Y (shutter_wait_time[2]));
+  NOR2XL g154(.A (input_setting[0]), .B (n_3), .Y
+       (shutter_wait_time[5]));
+  NOR2XL g155(.A (input_setting[2]), .B (input_setting[1]), .Y (n_4));
+  NAND2BXL g156(.AN (input_setting[2]), .B (input_setting[1]), .Y
+       (n_3));
+  NAND2BXL g157(.AN (input_setting[1]), .B (input_setting[2]), .Y
        (n_2));
-  INVX1 g516(.A (input_setting[1]), .Y (n_1));
-  TIELO tie_0_cell(.Y (shutter_wait_time[31]));
+  NAND2XL g158(.A (input_setting[1]), .B (input_setting[2]), .Y (n_1));
+  INVX1 g159(.A (input_setting[0]), .Y (n_0));
 endmodule
 
-module dffs_WIDTH3_65(d, q, en, clk, rst);
+module dffs_WIDTH3_61(d, q, en, clk, rst);
   input [2:0] d;
   input en, clk, rst;
   output [2:0] q;
   wire [2:0] d;
   wire en, clk, rst;
   wire [2:0] q;
-  wire n_0, n_1;
-  SDFFRHQX1 \q_reg[0] (.RN (n_0), .CK (clk), .D (q[0]), .SI (d[0]), .SE
-       (en), .Q (q[0]));
+  wire n_0, n_1, n_2;
+  DFFRHQX1 \q_reg[0] (.RN (n_0), .CK (clk), .D (n_2), .Q (q[0]));
   DFFRHQX1 \q_reg[1] (.RN (n_0), .CK (clk), .D (n_1), .Q (q[1]));
   SDFFRHQX1 \q_reg[2] (.RN (n_0), .CK (clk), .D (q[2]), .SI (d[2]), .SE
        (en), .Q (q[2]));
-  MX2X1 g57(.A (q[1]), .B (d[1]), .S0 (en), .Y (n_1));
-  INVX1 g58(.A (rst), .Y (n_0));
+  MX2X1 g57(.A (q[0]), .B (d[0]), .S0 (en), .Y (n_2));
+  MX2X1 g58(.A (q[1]), .B (d[1]), .S0 (en), .Y (n_1));
+  INVX1 g59(.A (rst), .Y (n_0));
 endmodule
 
 module mult_unsigned(A, B, Z);
@@ -775,10 +548,12 @@ module mult_unsigned(A, B, Z);
   TIELO tie_0_cell(.Y (Z[15]));
 endmodule
 
-module mult_unsigned_306(A, B, Z);
-  input [15:0] A, B;
+module mult_unsigned_197(A, B, Z);
+  input [15:0] A;
+  input [8:0] B;
   output [15:0] Z;
-  wire [15:0] A, B;
+  wire [15:0] A;
+  wire [8:0] B;
   wire [15:0] Z;
   wire n_0, n_2, n_3, n_4, n_5, n_6, n_7, n_8;
   wire n_9, n_10, n_11, n_12, n_13, n_14, n_15, n_16;
@@ -808,314 +583,314 @@ module mult_unsigned_306(A, B, Z);
   wire n_206, n_207, n_208, n_209, n_210, n_212, n_213, n_214;
   wire n_216, n_217, n_219, n_220, n_222, n_223, n_225, n_226;
   wire n_228, n_229, n_231, n_232, n_234, n_235;
-  XNOR2X1 g2450(.A (n_212), .B (n_234), .Y (Z[15]));
-  INVX1 g2451(.A (n_235), .Y (Z[14]));
-  ADDFX1 g2452(.A (n_205), .B (n_204), .CI (n_231), .CO (n_234), .S
+  XNOR2X1 g2342(.A (n_212), .B (n_234), .Y (Z[15]));
+  INVX1 g2343(.A (n_235), .Y (Z[14]));
+  ADDFX1 g2344(.A (n_205), .B (n_204), .CI (n_231), .CO (n_234), .S
        (n_235));
-  INVX1 g2453(.A (n_232), .Y (Z[13]));
-  ADDFX1 g2454(.A (n_201), .B (n_206), .CI (n_228), .CO (n_231), .S
+  INVX1 g2345(.A (n_232), .Y (Z[13]));
+  ADDFX1 g2346(.A (n_201), .B (n_206), .CI (n_228), .CO (n_231), .S
        (n_232));
-  INVX1 g2455(.A (n_229), .Y (Z[12]));
-  ADDFX1 g2456(.A (n_199), .B (n_202), .CI (n_225), .CO (n_228), .S
+  INVX1 g2347(.A (n_229), .Y (Z[12]));
+  ADDFX1 g2348(.A (n_199), .B (n_202), .CI (n_225), .CO (n_228), .S
        (n_229));
-  INVX1 g2457(.A (n_226), .Y (Z[11]));
-  ADDFX1 g2458(.A (n_207), .B (n_200), .CI (n_222), .CO (n_225), .S
+  INVX1 g2349(.A (n_226), .Y (Z[11]));
+  ADDFX1 g2350(.A (n_207), .B (n_200), .CI (n_222), .CO (n_225), .S
        (n_226));
-  INVX1 g2459(.A (n_223), .Y (Z[10]));
-  ADDFX1 g2460(.A (n_193), .B (n_208), .CI (n_219), .CO (n_222), .S
+  INVX1 g2351(.A (n_223), .Y (Z[10]));
+  ADDFX1 g2352(.A (n_193), .B (n_208), .CI (n_219), .CO (n_222), .S
        (n_223));
-  INVX1 g2461(.A (n_220), .Y (Z[9]));
-  ADDFX1 g2462(.A (n_185), .B (n_194), .CI (n_216), .CO (n_219), .S
+  INVX1 g2353(.A (n_220), .Y (Z[9]));
+  ADDFX1 g2354(.A (n_185), .B (n_194), .CI (n_216), .CO (n_219), .S
        (n_220));
-  INVX1 g2463(.A (n_217), .Y (Z[8]));
-  ADDFX1 g2464(.A (n_191), .B (n_213), .CI (n_186), .CO (n_216), .S
+  INVX1 g2355(.A (n_217), .Y (Z[8]));
+  ADDFX1 g2356(.A (n_191), .B (n_213), .CI (n_186), .CO (n_216), .S
        (n_217));
-  INVX1 g2465(.A (n_214), .Y (Z[7]));
-  ADDFX1 g2466(.A (n_175), .B (n_192), .CI (n_209), .CO (n_213), .S
+  INVX1 g2357(.A (n_214), .Y (Z[7]));
+  ADDFX1 g2358(.A (n_175), .B (n_192), .CI (n_209), .CO (n_213), .S
        (n_214));
-  XNOR2X1 g2467(.A (n_203), .B (n_195), .Y (n_212));
-  INVX1 g2468(.A (n_210), .Y (Z[6]));
-  ADDFX1 g2469(.A (n_151), .B (n_196), .CI (n_176), .CO (n_209), .S
+  XNOR2X1 g2359(.A (n_203), .B (n_195), .Y (n_212));
+  INVX1 g2360(.A (n_210), .Y (Z[6]));
+  ADDFX1 g2361(.A (n_161), .B (n_196), .CI (n_176), .CO (n_209), .S
        (n_210));
-  ADDFX1 g2470(.A (n_170), .B (n_162), .CI (n_174), .CO (n_207), .S
+  ADDFX1 g2362(.A (n_170), .B (n_174), .CI (n_160), .CO (n_207), .S
        (n_208));
-  ADDFX1 g2471(.A (n_183), .B (n_156), .CI (n_182), .CO (n_205), .S
+  ADDFX1 g2363(.A (n_183), .B (n_182), .CI (n_154), .CO (n_205), .S
        (n_206));
-  ADDFX1 g2472(.A (n_181), .B (n_158), .CI (n_180), .CO (n_203), .S
+  ADDFX1 g2364(.A (n_181), .B (n_180), .CI (n_156), .CO (n_203), .S
        (n_204));
-  ADDFX1 g2473(.A (n_177), .B (n_166), .CI (n_184), .CO (n_201), .S
+  ADDFX1 g2365(.A (n_177), .B (n_184), .CI (n_166), .CO (n_201), .S
        (n_202));
-  ADDFX1 g2474(.A (n_173), .B (n_150), .CI (n_178), .CO (n_199), .S
+  ADDFX1 g2366(.A (n_173), .B (n_178), .CI (n_150), .CO (n_199), .S
        (n_200));
-  INVX1 g2475(.A (n_197), .Y (Z[5]));
-  ADDFX1 g2476(.A (n_142), .B (n_152), .CI (n_188), .CO (n_196), .S
+  INVX1 g2367(.A (n_197), .Y (Z[5]));
+  ADDFX1 g2368(.A (n_142), .B (n_162), .CI (n_188), .CO (n_196), .S
        (n_197));
-  XNOR2X1 g2477(.A (n_179), .B (n_187), .Y (n_195));
-  ADDFX1 g2478(.A (n_163), .B (n_154), .CI (n_171), .CO (n_193), .S
+  XNOR2X1 g2369(.A (n_179), .B (n_187), .Y (n_195));
+  ADDFX1 g2370(.A (n_163), .B (n_152), .CI (n_171), .CO (n_193), .S
        (n_194));
-  ADDFX1 g2479(.A (n_159), .B (n_139), .CI (n_146), .CO (n_191), .S
+  ADDFX1 g2371(.A (n_157), .B (n_139), .CI (n_146), .CO (n_191), .S
        (n_192));
-  INVX1 g2480(.A (n_189), .Y (Z[4]));
-  ADDFX1 g2481(.A (n_132), .B (n_167), .CI (n_143), .CO (n_188), .S
+  INVX1 g2372(.A (n_189), .Y (Z[4]));
+  ADDFX1 g2373(.A (n_132), .B (n_167), .CI (n_143), .CO (n_188), .S
        (n_189));
-  XNOR2X1 g2482(.A (n_144), .B (n_172), .Y (n_187));
-  ADDFX1 g2483(.A (n_145), .B (n_164), .CI (n_148), .CO (n_185), .S
+  XNOR2X1 g2374(.A (n_172), .B (n_144), .Y (n_187));
+  ADDFX1 g2375(.A (n_145), .B (n_164), .CI (n_148), .CO (n_185), .S
        (n_186));
-  ADDFX1 g2484(.A (n_105), .B (n_33), .CI (n_149), .CO (n_183), .S
+  ADDFX1 g2376(.A (n_105), .B (n_112), .CI (n_149), .CO (n_183), .S
        (n_184));
-  ADDFX1 g2485(.A (n_128), .B (n_165), .CI (n_120), .CO (n_181), .S
+  ADDFX1 g2377(.A (n_111), .B (n_115), .CI (n_165), .CO (n_181), .S
        (n_182));
-  ADDFX1 g2486(.A (n_126), .B (n_155), .CI (n_122), .CO (n_179), .S
+  ADDFX1 g2378(.A (n_116), .B (n_119), .CI (n_153), .CO (n_179), .S
        (n_180));
-  ADDFX1 g2487(.A (n_107), .B (n_29), .CI (n_161), .CO (n_177), .S
+  ADDFX1 g2379(.A (n_108), .B (n_109), .CI (n_159), .CO (n_177), .S
        (n_178));
-  ADDFX1 g2488(.A (n_134), .B (n_20), .CI (n_160), .CO (n_175), .S
+  ADDFX1 g2380(.A (n_134), .B (n_21), .CI (n_158), .CO (n_175), .S
        (n_176));
-  ADDFX1 g2489(.A (n_129), .B (n_24), .CI (n_153), .CO (n_173), .S
+  ADDFX1 g2381(.A (n_107), .B (n_94), .CI (n_151), .CO (n_173), .S
        (n_174));
-  XNOR2X1 g2490(.A (n_157), .B (n_140), .Y (n_172));
-  ADDFX1 g2491(.A (n_124), .B (n_25), .CI (n_147), .CO (n_170), .S
+  XNOR2X1 g2382(.A (n_137), .B (n_155), .Y (n_172));
+  ADDFX1 g2383(.A (n_124), .B (n_25), .CI (n_147), .CO (n_170), .S
        (n_171));
-  INVX1 g2492(.A (n_168), .Y (Z[3]));
-  ADDFX1 g2493(.A (n_136), .B (n_98), .CI (n_133), .CO (n_167), .S
+  INVX1 g2384(.A (n_168), .Y (Z[3]));
+  ADDFX1 g2385(.A (n_136), .B (n_100), .CI (n_133), .CO (n_167), .S
        (n_168));
-  ADDFX1 g2494(.A (n_125), .B (n_112), .CI (n_118), .CO (n_165), .S
+  ADDFX1 g2386(.A (n_125), .B (n_28), .CI (n_118), .CO (n_165), .S
        (n_166));
-  ADDFX1 g2495(.A (n_104), .B (n_91), .CI (n_135), .CO (n_163), .S
+  ADDFX1 g2387(.A (n_104), .B (n_92), .CI (n_135), .CO (n_163), .S
        (n_164));
-  ADDFX1 g2496(.A (n_108), .B (n_94), .CI (n_113), .CO (n_161), .S
+  ADDFX1 g2388(.A (n_95), .B (n_18), .CI (n_138), .CO (n_161), .S
        (n_162));
-  ADDFX1 g2497(.A (n_84), .B (n_95), .CI (n_102), .CO (n_159), .S
+  ADDFX1 g2389(.A (n_128), .B (n_24), .CI (n_113), .CO (n_159), .S
        (n_160));
-  ADDFX1 g2498(.A (n_116), .B (n_119), .CI (n_26), .CO (n_157), .S
+  ADDFX1 g2390(.A (n_86), .B (n_96), .CI (n_102), .CO (n_157), .S
        (n_158));
-  ADDFX1 g2499(.A (n_111), .B (n_115), .CI (n_30), .CO (n_155), .S
+  ADDFX1 g2391(.A (n_129), .B (n_29), .CI (n_122), .CO (n_155), .S
        (n_156));
-  ADDFX1 g2500(.A (n_106), .B (n_92), .CI (n_110), .CO (n_153), .S
+  ADDFX1 g2392(.A (n_127), .B (n_33), .CI (n_120), .CO (n_153), .S
        (n_154));
-  ADDFX1 g2501(.A (n_93), .B (n_21), .CI (n_138), .CO (n_151), .S
+  ADDFX1 g2393(.A (n_106), .B (n_93), .CI (n_110), .CO (n_151), .S
        (n_152));
-  ADDFX1 g2502(.A (n_127), .B (n_109), .CI (n_114), .CO (n_149), .S
+  ADDFX1 g2394(.A (n_126), .B (n_31), .CI (n_114), .CO (n_149), .S
        (n_150));
-  ADDFX1 g2503(.A (n_85), .B (n_23), .CI (n_99), .CO (n_147), .S
+  ADDFX1 g2395(.A (n_85), .B (n_23), .CI (n_98), .CO (n_147), .S
        (n_148));
-  ADDFX1 g2504(.A (n_103), .B (n_96), .CI (n_17), .CO (n_145), .S
+  ADDFX1 g2396(.A (n_103), .B (n_91), .CI (n_22), .CO (n_145), .S
        (n_146));
-  XNOR2X1 g2505(.A (n_137), .B (n_121), .Y (n_144));
-  ADDFX1 g2506(.A (n_0), .B (n_19), .CI (n_100), .CO (n_142), .S
+  XNOR2X1 g2397(.A (n_121), .B (n_140), .Y (n_144));
+  ADDFX1 g2398(.A (n_0), .B (n_19), .CI (n_101), .CO (n_142), .S
        (n_143));
-  XNOR2X1 g2507(.A (n_16), .B (n_131), .Y (Z[2]));
-  XNOR2X1 g2508(.A (n_130), .B (n_27), .Y (n_140));
-  XNOR2X1 g2509(.A (n_89), .B (n_97), .Y (n_139));
-  XNOR2X1 g2510(.A (n_88), .B (n_101), .Y (n_138));
-  XNOR2X1 g2511(.A (n_117), .B (n_123), .Y (n_137));
-  OA22X1 g2512(.A0 (n_86), .A1 (n_22), .B0 (n_16), .B1 (n_22), .Y
+  XNOR2X1 g2399(.A (n_16), .B (n_131), .Y (Z[2]));
+  XNOR2X1 g2400(.A (n_130), .B (n_32), .Y (n_140));
+  XNOR2X1 g2401(.A (n_89), .B (n_97), .Y (n_139));
+  XNOR2X1 g2402(.A (n_88), .B (n_99), .Y (n_138));
+  XNOR2X1 g2403(.A (n_117), .B (n_123), .Y (n_137));
+  OA22X1 g2404(.A0 (n_84), .A1 (n_17), .B0 (n_16), .B1 (n_17), .Y
        (n_136));
-  OR2X1 g2513(.A (n_89), .B (n_97), .Y (n_135));
-  OR2X1 g2514(.A (n_88), .B (n_101), .Y (n_134));
-  XNOR2X1 g2515(.A (n_90), .B (n_18), .Y (n_133));
-  OR2X1 g2516(.A (n_90), .B (n_18), .Y (n_132));
-  CLKXOR2X1 g2517(.A (n_86), .B (n_22), .Y (n_131));
-  AOI22XL g2518(.A0 (n_87), .A1 (A[6]), .B0 (n_65), .B1 (A[7]), .Y
+  OR2X1 g2405(.A (n_89), .B (n_97), .Y (n_135));
+  OR2X1 g2406(.A (n_88), .B (n_99), .Y (n_134));
+  XNOR2X1 g2407(.A (n_90), .B (n_20), .Y (n_133));
+  OR2X1 g2408(.A (n_90), .B (n_20), .Y (n_132));
+  CLKXOR2X1 g2409(.A (n_84), .B (n_17), .Y (n_131));
+  AOI22XL g2410(.A0 (n_87), .A1 (A[6]), .B0 (n_65), .B1 (A[7]), .Y
        (n_130));
-  AOI22XL g2519(.A0 (A[1]), .A1 (n_87), .B0 (n_65), .B1 (A[2]), .Y
+  AOI22XL g2411(.A0 (n_87), .A1 (A[5]), .B0 (n_65), .B1 (A[6]), .Y
        (n_129));
-  AOI22XL g2520(.A0 (n_87), .A1 (A[4]), .B0 (n_65), .B1 (A[5]), .Y
+  AOI22XL g2412(.A0 (A[1]), .A1 (n_87), .B0 (n_65), .B1 (A[2]), .Y
        (n_128));
-  AOI22XL g2521(.A0 (n_87), .A1 (A[2]), .B0 (n_65), .B1 (A[3]), .Y
+  AOI22XL g2413(.A0 (n_87), .A1 (A[4]), .B0 (n_65), .B1 (A[5]), .Y
        (n_127));
-  AOI22XL g2522(.A0 (n_87), .A1 (A[5]), .B0 (n_65), .B1 (A[6]), .Y
+  AOI22XL g2414(.A0 (n_87), .A1 (A[2]), .B0 (n_65), .B1 (A[3]), .Y
        (n_126));
-  AOI22XL g2523(.A0 (n_87), .A1 (A[3]), .B0 (n_65), .B1 (A[4]), .Y
+  AOI22XL g2415(.A0 (n_87), .A1 (A[3]), .B0 (n_65), .B1 (A[4]), .Y
        (n_125));
-  AOI22XL g2524(.A0 (A[0]), .A1 (n_87), .B0 (n_65), .B1 (A[1]), .Y
+  AOI22XL g2416(.A0 (A[0]), .A1 (n_87), .B0 (n_65), .B1 (A[1]), .Y
        (n_124));
-  OAI22XL g2525(.A0 (n_82), .A1 (n_67), .B0 (n_71), .B1 (n_69), .Y
+  OAI22XL g2417(.A0 (n_82), .A1 (n_70), .B0 (n_72), .B1 (n_68), .Y
        (n_123));
-  AOI22XL g2526(.A0 (n_81), .A1 (n_74), .B0 (n_60), .B1 (n_73), .Y
+  AOI22XL g2418(.A0 (n_81), .A1 (n_76), .B0 (n_60), .B1 (n_74), .Y
        (n_122));
-  AO22X1 g2527(.A0 (n_81), .A1 (n_73), .B0 (n_60), .B1 (n_72), .Y
+  AO22X1 g2419(.A0 (n_81), .A1 (n_74), .B0 (n_60), .B1 (n_73), .Y
        (n_121));
-  AOI22XL g2528(.A0 (n_81), .A1 (n_75), .B0 (n_60), .B1 (n_74), .Y
+  AOI22XL g2420(.A0 (n_81), .A1 (n_75), .B0 (n_60), .B1 (n_76), .Y
        (n_120));
-  OA22X1 g2529(.A0 (n_82), .A1 (n_62), .B0 (n_71), .B1 (n_67), .Y
+  OA22X1 g2421(.A0 (n_82), .A1 (n_61), .B0 (n_72), .B1 (n_70), .Y
        (n_119));
-  AOI22XL g2530(.A0 (n_81), .A1 (n_63), .B0 (n_60), .B1 (n_75), .Y
+  AOI22XL g2422(.A0 (n_81), .A1 (n_63), .B0 (n_60), .B1 (n_75), .Y
        (n_118));
-  AOI22XL g2531(.A0 (n_83), .A1 (n_59), .B0 (n_68), .B1 (n_58), .Y
+  AOI22XL g2423(.A0 (n_83), .A1 (n_59), .B0 (n_69), .B1 (n_58), .Y
        (n_117));
-  AOI22XL g2532(.A0 (n_83), .A1 (n_55), .B0 (n_68), .B1 (n_59), .Y
+  AOI22XL g2424(.A0 (n_83), .A1 (n_55), .B0 (n_69), .B1 (n_59), .Y
        (n_116));
-  OA22X1 g2533(.A0 (n_82), .A1 (n_61), .B0 (n_71), .B1 (n_62), .Y
+  OA22X1 g2425(.A0 (n_82), .A1 (n_62), .B0 (n_72), .B1 (n_61), .Y
        (n_115));
-  AOI22XL g2534(.A0 (n_81), .A1 (n_64), .B0 (n_60), .B1 (n_63), .Y
+  AOI22XL g2426(.A0 (n_81), .A1 (n_64), .B0 (n_60), .B1 (n_63), .Y
        (n_114));
-  AOI22XL g2535(.A0 (n_81), .A1 (n_57), .B0 (n_60), .B1 (n_64), .Y
+  AOI22XL g2427(.A0 (n_81), .A1 (n_57), .B0 (n_60), .B1 (n_64), .Y
        (n_113));
-  OA22X1 g2536(.A0 (n_82), .A1 (n_56), .B0 (n_71), .B1 (n_61), .Y
+  OA22X1 g2428(.A0 (n_82), .A1 (n_56), .B0 (n_72), .B1 (n_62), .Y
        (n_112));
-  AOI22XL g2537(.A0 (n_83), .A1 (n_37), .B0 (n_68), .B1 (n_55), .Y
+  AOI22XL g2429(.A0 (n_83), .A1 (n_37), .B0 (n_69), .B1 (n_55), .Y
        (n_111));
-  AOI22XL g2538(.A0 (n_81), .A1 (n_52), .B0 (n_60), .B1 (n_57), .Y
+  AOI22XL g2430(.A0 (n_81), .A1 (n_52), .B0 (n_60), .B1 (n_57), .Y
        (n_110));
-  OA22X1 g2539(.A0 (n_82), .A1 (n_44), .B0 (n_71), .B1 (n_56), .Y
+  OA22X1 g2431(.A0 (n_82), .A1 (n_44), .B0 (n_72), .B1 (n_56), .Y
        (n_109));
-  AOI22XL g2540(.A0 (n_83), .A1 (n_39), .B0 (n_68), .B1 (n_42), .Y
+  AOI22XL g2432(.A0 (n_83), .A1 (n_40), .B0 (n_69), .B1 (n_42), .Y
        (n_108));
-  AOI22XL g2541(.A0 (n_83), .A1 (n_42), .B0 (n_68), .B1 (n_38), .Y
+  AOI22XL g2433(.A0 (n_83), .A1 (n_41), .B0 (n_69), .B1 (n_40), .Y
        (n_107));
-  AOI22XL g2542(.A0 (n_83), .A1 (n_41), .B0 (n_68), .B1 (n_39), .Y
+  AOI22XL g2434(.A0 (n_83), .A1 (n_38), .B0 (n_69), .B1 (n_41), .Y
        (n_106));
-  AOI22XL g2543(.A0 (n_83), .A1 (n_38), .B0 (n_68), .B1 (n_37), .Y
+  AOI22XL g2435(.A0 (n_83), .A1 (n_42), .B0 (n_69), .B1 (n_37), .Y
        (n_105));
-  AOI22XL g2544(.A0 (n_83), .A1 (n_40), .B0 (n_68), .B1 (n_41), .Y
+  AOI22XL g2436(.A0 (n_83), .A1 (n_39), .B0 (n_69), .B1 (n_38), .Y
        (n_104));
-  AOI22XL g2545(.A0 (n_83), .A1 (n_34), .B0 (n_68), .B1 (n_40), .Y
+  AOI22XL g2437(.A0 (n_83), .A1 (n_34), .B0 (n_69), .B1 (n_39), .Y
        (n_103));
-  AOI22XL g2546(.A0 (n_81), .A1 (n_54), .B0 (n_60), .B1 (n_50), .Y
+  AOI22XL g2438(.A0 (n_81), .A1 (n_51), .B0 (n_60), .B1 (n_50), .Y
        (n_102));
-  AOI22XL g2547(.A0 (n_81), .A1 (n_53), .B0 (n_60), .B1 (n_54), .Y
+  AOI22XL g2439(.A0 (n_81), .A1 (n_54), .B0 (n_60), .B1 (n_53), .Y
        (n_101));
-  AOI22XL g2548(.A0 (n_81), .A1 (n_49), .B0 (n_60), .B1 (n_53), .Y
+  AOI22XL g2440(.A0 (n_36), .A1 (n_81), .B0 (n_60), .B1 (n_54), .Y
        (n_100));
-  AOI22XL g2549(.A0 (n_81), .A1 (n_51), .B0 (n_60), .B1 (n_52), .Y
+  AOI22XL g2441(.A0 (n_81), .A1 (n_53), .B0 (n_60), .B1 (n_51), .Y
        (n_99));
-  AOI22XL g2550(.A0 (n_81), .A1 (n_36), .B0 (n_60), .B1 (n_49), .Y
+  AOI22XL g2442(.A0 (n_81), .A1 (n_49), .B0 (n_60), .B1 (n_52), .Y
        (n_98));
-  AOI22XL g2551(.A0 (n_81), .A1 (n_50), .B0 (n_60), .B1 (n_51), .Y
+  AOI22XL g2443(.A0 (n_81), .A1 (n_50), .B0 (n_60), .B1 (n_49), .Y
        (n_97));
-  OA22X1 g2552(.A0 (n_82), .A1 (n_43), .B0 (n_71), .B1 (n_47), .Y
+  OA22X1 g2444(.A0 (n_82), .A1 (n_46), .B0 (n_72), .B1 (n_47), .Y
        (n_96));
-  OA22X1 g2553(.A0 (n_82), .A1 (n_45), .B0 (n_71), .B1 (n_43), .Y
+  OA22X1 g2445(.A0 (n_35), .A1 (n_82), .B0 (n_72), .B1 (n_46), .Y
        (n_95));
-  OA22X1 g2554(.A0 (n_82), .A1 (n_48), .B0 (n_71), .B1 (n_44), .Y
+  OA22X1 g2446(.A0 (n_82), .A1 (n_48), .B0 (n_72), .B1 (n_44), .Y
        (n_94));
-  OA22X1 g2555(.A0 (n_35), .A1 (n_82), .B0 (n_71), .B1 (n_45), .Y
+  OA22X1 g2447(.A0 (n_82), .A1 (n_43), .B0 (n_72), .B1 (n_48), .Y
        (n_93));
-  OA22X1 g2556(.A0 (n_82), .A1 (n_46), .B0 (n_71), .B1 (n_48), .Y
+  OA22X1 g2448(.A0 (n_82), .A1 (n_45), .B0 (n_72), .B1 (n_43), .Y
        (n_92));
-  OA22X1 g2557(.A0 (n_82), .A1 (n_47), .B0 (n_71), .B1 (n_46), .Y
+  OA22X1 g2449(.A0 (n_82), .A1 (n_47), .B0 (n_72), .B1 (n_45), .Y
        (n_91));
-  OAI21XL g2558(.A0 (n_32), .A1 (n_79), .B0 (B[3]), .Y (n_90));
-  OAI21XL g2559(.A0 (n_31), .A1 (n_78), .B0 (B[7]), .Y (n_89));
-  OAI21XL g2560(.A0 (n_28), .A1 (n_77), .B0 (B[5]), .Y (n_88));
-  NOR2BX1 g2561(.AN (B[8]), .B (n_65), .Y (n_87));
-  NAND2XL g2563(.A (A[0]), .B (n_60), .Y (n_86));
-  NAND2XL g2564(.A (A[0]), .B (n_65), .Y (n_85));
-  NAND2XL g2565(.A (A[0]), .B (n_68), .Y (n_84));
-  NOR2XL g2566(.A (n_66), .B (n_68), .Y (n_83));
-  NAND2XL g2567(.A (n_71), .B (n_70), .Y (n_82));
-  NOR2XL g2568(.A (n_76), .B (n_60), .Y (n_81));
-  AND2X1 g2569(.A (n_16), .B (B[1]), .Y (Z[1]));
-  AOI21XL g2570(.A0 (B[2]), .A1 (A[0]), .B0 (B[1]), .Y (n_79));
-  AOI21XL g2571(.A0 (B[6]), .A1 (A[0]), .B0 (B[5]), .Y (n_78));
-  AOI21XL g2572(.A0 (B[4]), .A1 (A[0]), .B0 (B[3]), .Y (n_77));
-  XNOR2X1 g2573(.A (B[2]), .B (B[3]), .Y (n_76));
-  MX2X1 g2574(.A (B[3]), .B (n_15), .S0 (A[10]), .Y (n_75));
-  XNOR2X1 g2575(.A (n_15), .B (A[11]), .Y (n_74));
-  XNOR2X1 g2576(.A (n_15), .B (A[12]), .Y (n_73));
-  XNOR2X1 g2577(.A (n_15), .B (A[13]), .Y (n_72));
-  XNOR2X1 g2579(.A (B[4]), .B (B[3]), .Y (n_71));
-  MX2X1 g2580(.A (B[5]), .B (n_7), .S0 (B[4]), .Y (n_70));
-  XNOR2X1 g2581(.A (B[5]), .B (A[11]), .Y (n_69));
-  XNOR2X1 g2582(.A (B[6]), .B (n_7), .Y (n_68));
-  XNOR2X1 g2583(.A (B[5]), .B (A[10]), .Y (n_67));
-  XNOR2X1 g2584(.A (B[6]), .B (B[7]), .Y (n_66));
-  MX2X1 g2585(.A (B[7]), .B (n_4), .S0 (B[8]), .Y (n_65));
-  OAI22XL g2586(.A0 (B[3]), .A1 (n_12), .B0 (n_15), .B1 (A[8]), .Y
+  OAI21XL g2450(.A0 (n_26), .A1 (n_79), .B0 (B[3]), .Y (n_90));
+  OAI21XL g2451(.A0 (n_27), .A1 (n_78), .B0 (B[7]), .Y (n_89));
+  OAI21XL g2452(.A0 (n_30), .A1 (n_77), .B0 (B[5]), .Y (n_88));
+  NOR2BX1 g2453(.AN (B[8]), .B (n_65), .Y (n_87));
+  NAND2XL g2454(.A (A[0]), .B (n_69), .Y (n_86));
+  NAND2XL g2456(.A (A[0]), .B (n_65), .Y (n_85));
+  NAND2XL g2457(.A (A[0]), .B (n_60), .Y (n_84));
+  NOR2XL g2458(.A (n_66), .B (n_69), .Y (n_83));
+  NAND2XL g2459(.A (n_72), .B (n_67), .Y (n_82));
+  NOR2XL g2460(.A (n_71), .B (n_60), .Y (n_81));
+  AND2X1 g2461(.A (n_16), .B (B[1]), .Y (Z[1]));
+  AOI21XL g2462(.A0 (B[2]), .A1 (A[0]), .B0 (B[1]), .Y (n_79));
+  AOI21XL g2463(.A0 (B[6]), .A1 (A[0]), .B0 (B[5]), .Y (n_78));
+  AOI21XL g2464(.A0 (B[4]), .A1 (A[0]), .B0 (B[3]), .Y (n_77));
+  MX2X1 g2465(.A (B[3]), .B (n_11), .S0 (A[11]), .Y (n_76));
+  XNOR2X1 g2466(.A (n_11), .B (A[10]), .Y (n_75));
+  XNOR2X1 g2467(.A (n_11), .B (A[12]), .Y (n_74));
+  XNOR2X1 g2468(.A (n_11), .B (A[13]), .Y (n_73));
+  XNOR2X1 g2470(.A (B[4]), .B (B[3]), .Y (n_72));
+  XNOR2X1 g2471(.A (B[2]), .B (B[3]), .Y (n_71));
+  XNOR2X1 g2472(.A (B[5]), .B (A[10]), .Y (n_70));
+  MX2X1 g2473(.A (B[5]), .B (n_5), .S0 (B[6]), .Y (n_69));
+  XNOR2X1 g2474(.A (B[5]), .B (A[11]), .Y (n_68));
+  XNOR2X1 g2475(.A (B[4]), .B (n_5), .Y (n_67));
+  XNOR2X1 g2476(.A (B[6]), .B (B[7]), .Y (n_66));
+  MX2X1 g2477(.A (B[7]), .B (n_12), .S0 (B[8]), .Y (n_65));
+  OAI22XL g2478(.A0 (B[3]), .A1 (n_15), .B0 (n_11), .B1 (A[8]), .Y
        (n_64));
-  OAI22XL g2587(.A0 (B[3]), .A1 (n_5), .B0 (n_15), .B1 (A[9]), .Y
+  OAI22XL g2479(.A0 (B[3]), .A1 (n_7), .B0 (n_11), .B1 (A[9]), .Y
        (n_63));
-  AOI22XL g2588(.A0 (n_7), .A1 (A[9]), .B0 (B[5]), .B1 (n_5), .Y
+  AOI22XL g2480(.A0 (n_5), .A1 (A[8]), .B0 (B[5]), .B1 (n_15), .Y
        (n_62));
-  AOI22XL g2589(.A0 (n_7), .A1 (A[8]), .B0 (B[5]), .B1 (n_12), .Y
+  AOI22XL g2481(.A0 (n_5), .A1 (A[9]), .B0 (B[5]), .B1 (n_7), .Y
        (n_61));
-  MX2X1 g2590(.A (B[1]), .B (n_6), .S0 (B[2]), .Y (n_60));
-  OAI22XL g2591(.A0 (B[7]), .A1 (n_12), .B0 (n_4), .B1 (A[8]), .Y
+  MX2X1 g2482(.A (B[1]), .B (n_3), .S0 (B[2]), .Y (n_60));
+  OAI22XL g2483(.A0 (B[7]), .A1 (n_15), .B0 (n_12), .B1 (A[8]), .Y
        (n_59));
-  OAI22XL g2592(.A0 (B[7]), .A1 (n_5), .B0 (n_4), .B1 (A[9]), .Y
+  OAI22XL g2484(.A0 (B[7]), .A1 (n_7), .B0 (n_12), .B1 (A[9]), .Y
        (n_58));
-  OAI22XL g2593(.A0 (B[3]), .A1 (n_8), .B0 (n_15), .B1 (A[7]), .Y
+  OAI22XL g2485(.A0 (B[3]), .A1 (n_6), .B0 (n_11), .B1 (A[7]), .Y
        (n_57));
-  AOI22XL g2594(.A0 (n_7), .A1 (A[7]), .B0 (B[5]), .B1 (n_8), .Y
+  AOI22XL g2486(.A0 (n_5), .A1 (A[7]), .B0 (B[5]), .B1 (n_6), .Y
        (n_56));
-  OAI22XL g2595(.A0 (B[7]), .A1 (n_8), .B0 (n_4), .B1 (A[7]), .Y
+  OAI22XL g2487(.A0 (B[7]), .A1 (n_6), .B0 (n_12), .B1 (A[7]), .Y
        (n_55));
-  OAI22XL g2596(.A0 (B[3]), .A1 (n_9), .B0 (n_15), .B1 (A[3]), .Y
+  OAI22XL g2488(.A0 (B[3]), .A1 (n_2), .B0 (n_11), .B1 (A[1]), .Y
        (n_54));
-  OAI22XL g2597(.A0 (B[3]), .A1 (n_13), .B0 (n_15), .B1 (A[2]), .Y
+  OAI22XL g2489(.A0 (B[3]), .A1 (n_10), .B0 (n_11), .B1 (A[2]), .Y
        (n_53));
-  OAI22XL g2598(.A0 (B[3]), .A1 (n_14), .B0 (n_15), .B1 (A[6]), .Y
+  OAI22XL g2490(.A0 (B[3]), .A1 (n_14), .B0 (n_11), .B1 (A[6]), .Y
        (n_52));
-  OAI22XL g2599(.A0 (B[3]), .A1 (n_2), .B0 (n_15), .B1 (A[5]), .Y
+  OAI22XL g2491(.A0 (B[3]), .A1 (n_4), .B0 (n_11), .B1 (A[3]), .Y
        (n_51));
-  OAI22XL g2600(.A0 (B[3]), .A1 (n_11), .B0 (n_15), .B1 (A[4]), .Y
+  OAI22XL g2492(.A0 (B[3]), .A1 (n_9), .B0 (n_11), .B1 (A[4]), .Y
        (n_50));
-  OAI22XL g2601(.A0 (B[3]), .A1 (n_3), .B0 (n_15), .B1 (A[1]), .Y
+  OAI22XL g2493(.A0 (B[3]), .A1 (n_8), .B0 (n_11), .B1 (A[5]), .Y
        (n_49));
-  AOI22XL g2602(.A0 (n_7), .A1 (A[5]), .B0 (B[5]), .B1 (n_2), .Y
+  AOI22XL g2494(.A0 (n_5), .A1 (A[5]), .B0 (B[5]), .B1 (n_8), .Y
        (n_48));
-  AOI22XL g2603(.A0 (n_7), .A1 (A[3]), .B0 (B[5]), .B1 (n_9), .Y
+  AOI22XL g2495(.A0 (n_5), .A1 (A[2]), .B0 (B[5]), .B1 (n_10), .Y
        (n_47));
-  AOI22XL g2604(.A0 (n_7), .A1 (A[4]), .B0 (B[5]), .B1 (n_11), .Y
+  AOI22XL g2496(.A0 (n_5), .A1 (A[1]), .B0 (B[5]), .B1 (n_2), .Y
        (n_46));
-  AOI22XL g2605(.A0 (n_7), .A1 (A[1]), .B0 (B[5]), .B1 (n_3), .Y
+  AOI22XL g2497(.A0 (n_5), .A1 (A[3]), .B0 (B[5]), .B1 (n_4), .Y
        (n_45));
-  AOI22XL g2606(.A0 (n_7), .A1 (A[6]), .B0 (B[5]), .B1 (n_14), .Y
+  AOI22XL g2498(.A0 (n_5), .A1 (A[6]), .B0 (B[5]), .B1 (n_14), .Y
        (n_44));
-  AOI22XL g2607(.A0 (n_7), .A1 (A[2]), .B0 (B[5]), .B1 (n_13), .Y
+  AOI22XL g2499(.A0 (n_5), .A1 (A[4]), .B0 (B[5]), .B1 (n_9), .Y
        (n_43));
-  OAI22XL g2608(.A0 (B[7]), .A1 (n_11), .B0 (n_4), .B1 (A[4]), .Y
+  OAI22XL g2500(.A0 (B[7]), .A1 (n_8), .B0 (n_12), .B1 (A[5]), .Y
        (n_42));
-  OAI22XL g2609(.A0 (B[7]), .A1 (n_13), .B0 (n_4), .B1 (A[2]), .Y
+  OAI22XL g2501(.A0 (B[7]), .A1 (n_4), .B0 (n_12), .B1 (A[3]), .Y
        (n_41));
-  OAI22XL g2610(.A0 (B[7]), .A1 (n_3), .B0 (n_4), .B1 (A[1]), .Y
+  OAI22XL g2502(.A0 (B[7]), .A1 (n_9), .B0 (n_12), .B1 (A[4]), .Y
        (n_40));
-  OAI22XL g2611(.A0 (B[7]), .A1 (n_9), .B0 (n_4), .B1 (A[3]), .Y
+  OAI22XL g2503(.A0 (B[7]), .A1 (n_2), .B0 (n_12), .B1 (A[1]), .Y
        (n_39));
-  OAI22XL g2612(.A0 (B[7]), .A1 (n_2), .B0 (n_4), .B1 (A[5]), .Y
+  OAI22XL g2504(.A0 (B[7]), .A1 (n_10), .B0 (n_12), .B1 (A[2]), .Y
        (n_38));
-  OAI22XL g2613(.A0 (B[7]), .A1 (n_14), .B0 (n_4), .B1 (A[6]), .Y
+  OAI22XL g2505(.A0 (B[7]), .A1 (n_14), .B0 (n_12), .B1 (A[6]), .Y
        (n_37));
-  OAI22XL g2614(.A0 (B[3]), .A1 (n_10), .B0 (n_15), .B1 (A[0]), .Y
+  OAI22XL g2506(.A0 (B[3]), .A1 (n_13), .B0 (n_11), .B1 (A[0]), .Y
        (n_36));
-  AOI22XL g2615(.A0 (n_7), .A1 (A[0]), .B0 (B[5]), .B1 (n_10), .Y
+  AOI22XL g2507(.A0 (n_5), .A1 (A[0]), .B0 (B[5]), .B1 (n_13), .Y
        (n_35));
-  OAI22XL g2616(.A0 (B[7]), .A1 (n_10), .B0 (n_4), .B1 (A[0]), .Y
+  OAI22XL g2508(.A0 (B[7]), .A1 (n_13), .B0 (n_12), .B1 (A[0]), .Y
        (n_34));
-  OR2X1 g2617(.A (n_6), .B (A[11]), .Y (n_33));
-  NOR2XL g2618(.A (B[2]), .B (A[0]), .Y (n_32));
-  NOR2XL g2619(.A (B[6]), .B (A[0]), .Y (n_31));
-  OR2X1 g2620(.A (n_6), .B (A[12]), .Y (n_30));
-  OR2X1 g2621(.A (n_6), .B (A[10]), .Y (n_29));
-  NOR2XL g2622(.A (B[4]), .B (A[0]), .Y (n_28));
-  NOR2XL g2623(.A (n_6), .B (A[14]), .Y (n_27));
-  OR2X1 g2624(.A (n_6), .B (A[13]), .Y (n_26));
-  NAND2XL g2625(.A (B[1]), .B (n_12), .Y (n_25));
-  NAND2XL g2626(.A (B[1]), .B (n_5), .Y (n_24));
-  NAND2XL g2627(.A (B[1]), .B (n_8), .Y (n_23));
-  NAND2XL g2628(.A (B[1]), .B (n_3), .Y (n_22));
-  NAND2XL g2629(.A (B[1]), .B (n_11), .Y (n_21));
-  NAND2XL g2630(.A (B[1]), .B (n_2), .Y (n_20));
-  NAND2XL g2631(.A (B[1]), .B (n_9), .Y (n_19));
-  NAND2XL g2632(.A (B[1]), .B (n_13), .Y (n_18));
-  NAND2XL g2633(.A (B[1]), .B (n_14), .Y (n_17));
-  NAND2XL g2634(.A (B[1]), .B (n_10), .Y (n_16));
-  INVX1 g2635(.A (B[3]), .Y (n_15));
-  INVX1 g2636(.A (A[6]), .Y (n_14));
-  INVX1 g2637(.A (A[2]), .Y (n_13));
-  INVX1 g2638(.A (A[8]), .Y (n_12));
-  INVX1 g2639(.A (A[4]), .Y (n_11));
-  INVX1 g2640(.A (A[0]), .Y (n_10));
-  INVX1 g2641(.A (A[3]), .Y (n_9));
-  INVX1 g2642(.A (A[7]), .Y (n_8));
-  INVX1 g2643(.A (B[5]), .Y (n_7));
-  INVX1 g2644(.A (B[1]), .Y (n_6));
-  INVX1 g2645(.A (A[9]), .Y (n_5));
-  INVX1 g2646(.A (B[7]), .Y (n_4));
-  INVX1 g2647(.A (A[1]), .Y (n_3));
-  INVX1 g2648(.A (A[5]), .Y (n_2));
-  NAND2BX1 g2(.AN (n_71), .B (A[0]), .Y (n_0));
+  OR2X1 g2509(.A (n_3), .B (A[12]), .Y (n_33));
+  NOR2XL g2510(.A (n_3), .B (A[14]), .Y (n_32));
+  OR2X1 g2511(.A (n_3), .B (A[10]), .Y (n_31));
+  NOR2XL g2512(.A (B[4]), .B (A[0]), .Y (n_30));
+  OR2X1 g2513(.A (n_3), .B (A[13]), .Y (n_29));
+  OR2X1 g2514(.A (n_3), .B (A[11]), .Y (n_28));
+  NOR2XL g2515(.A (B[6]), .B (A[0]), .Y (n_27));
+  NOR2XL g2516(.A (B[2]), .B (A[0]), .Y (n_26));
+  NAND2XL g2517(.A (B[1]), .B (n_15), .Y (n_25));
+  NAND2XL g2518(.A (B[1]), .B (n_7), .Y (n_24));
+  NAND2XL g2519(.A (B[1]), .B (n_6), .Y (n_23));
+  NAND2XL g2520(.A (B[1]), .B (n_14), .Y (n_22));
+  NAND2XL g2521(.A (B[1]), .B (n_8), .Y (n_21));
+  NAND2XL g2522(.A (B[1]), .B (n_10), .Y (n_20));
+  NAND2XL g2523(.A (B[1]), .B (n_4), .Y (n_19));
+  NAND2XL g2524(.A (B[1]), .B (n_9), .Y (n_18));
+  NAND2XL g2525(.A (B[1]), .B (n_2), .Y (n_17));
+  NAND2XL g2526(.A (B[1]), .B (n_13), .Y (n_16));
+  INVX1 g2527(.A (A[8]), .Y (n_15));
+  INVX1 g2528(.A (A[6]), .Y (n_14));
+  INVX1 g2529(.A (A[0]), .Y (n_13));
+  INVX1 g2530(.A (B[7]), .Y (n_12));
+  INVX1 g2531(.A (B[3]), .Y (n_11));
+  INVX1 g2532(.A (A[2]), .Y (n_10));
+  INVX1 g2533(.A (A[4]), .Y (n_9));
+  INVX1 g2534(.A (A[5]), .Y (n_8));
+  INVX1 g2535(.A (A[9]), .Y (n_7));
+  INVX1 g2536(.A (A[7]), .Y (n_6));
+  INVX1 g2537(.A (B[5]), .Y (n_5));
+  INVX1 g2538(.A (A[3]), .Y (n_4));
+  INVX1 g2539(.A (B[1]), .Y (n_3));
+  INVX1 g2540(.A (A[1]), .Y (n_2));
+  NAND2BX1 g2(.AN (n_72), .B (A[0]), .Y (n_0));
   TIELO tie_0_cell(.Y (Z[0]));
 endmodule
 
@@ -1133,237 +908,224 @@ module fsm(clk, reset, power_btn, mode_inc, mode_dec, fstop_inc,
   wire [15:0] output_data;
   wire output_data_valid;
   wire [2:0] aperture_setting;
-  wire [31:0] scd_cycles;
+  wire [7:0] shutter_setting_output;
   wire [7:0] aperture_multiplier;
   wire [2:0] shutter_setting;
-  wire [4:0] current_state;
-  wire [4:0] prev_mode_state;
-  wire UNCONNECTED0, UNCONNECTED1, UNCONNECTED2, UNCONNECTED3,
-       UNCONNECTED4, UNCONNECTED5, UNCONNECTED6, UNCONNECTED7;
-  wire UNCONNECTED8, UNCONNECTED9, UNCONNECTED10, UNCONNECTED11,
-       UNCONNECTED12, UNCONNECTED13, UNCONNECTED14, UNCONNECTED15;
-  wire UNCONNECTED16, UNCONNECTED17, UNCONNECTED18, UNCONNECTED19,
-       UNCONNECTED20, UNCONNECTED21, UNCONNECTED22, UNCONNECTED23;
-  wire UNCONNECTED24, n_0, n_1, n_2, n_3, n_4, n_6, n_8;
-  wire n_9, n_10, n_11, n_12, n_13, n_14, n_15, n_16;
-  wire n_17, n_18, n_20, n_21, n_22, n_23, n_24, n_25;
-  wire n_26, n_27, n_28, n_29, n_30, n_31, n_32, n_33;
-  wire n_34, n_35, n_36, n_37, n_38, n_39, n_40, n_41;
-  wire n_42, n_43, n_44, n_45, n_47, n_48, n_49, n_50;
-  wire n_51, n_52, n_53, n_54, n_55, n_56, n_57, n_58;
-  wire n_59, n_60, n_61, n_62, n_63, n_64, n_65, n_66;
-  wire n_67, n_68, n_69, n_70, n_71, n_72, n_73, n_74;
-  wire n_75, n_76, n_77, n_79, n_80, n_81, n_82, n_83;
-  wire n_84, n_87, n_88, n_89, n_90, n_91, n_92, n_93;
-  wire n_94, n_95, n_96, n_98, n_99, n_100, n_101, n_102;
-  wire n_103, n_104, n_105, n_106, n_107, n_108, n_109, n_110;
-  wire n_111, n_112, n_113, n_136, n_137, n_138, n_139, n_140;
-  wire n_141, n_142, n_143, n_144, n_145, n_146, n_147, n_148;
-  wire n_149, n_150, n_152, n_153, n_154, n_155, n_156, n_157;
-  wire n_158, n_159, n_164, n_165, n_183, n_185, n_186, power_on;
-  wire scd_done;
-  dffs_WIDTH3 APERTURE_SETTING_FF(.d ({n_93, n_92, n_91}), .q
-       (aperture_setting), .en (n_94), .clk (clk), .rst (reset));
-  countdown COUNTDOWN_MODULE(.clk (clk), .reset (n_159), .wait_cycles
-       ({output_data[0], output_data[0], output_data[0],
-       output_data[0], output_data[0], output_data[0], output_data[0],
-       output_data[0], output_data[0], output_data[0], output_data[0],
-       output_data[0], output_data[0], output_data[0], output_data[0],
-       output_data[0], output_data[0], output_data[0], output_data[0],
-       output_data[0], output_data[0], output_data[0], output_data[0],
-       scd_cycles[8:1], output_data[0]}), .write_enable (n_165),
-       .countdown_enable (n_152), .done (scd_done));
+  wire [3:0] current_state;
+  wire [3:0] prev_mode_state;
+  wire UNCONNECTED, UNCONNECTED0, n_0, n_1, n_2, n_3, n_4, n_5;
+  wire n_6, n_7, n_8, n_9, n_10, n_11, n_12, n_13;
+  wire n_14, n_15, n_16, n_17, n_18, n_19, n_20, n_21;
+  wire n_22, n_23, n_24, n_25, n_26, n_27, n_28, n_29;
+  wire n_30, n_31, n_32, n_33, n_34, n_35, n_36, n_37;
+  wire n_38, n_40, n_41, n_42, n_43, n_44, n_45, n_46;
+  wire n_47, n_48, n_49, n_50, n_51, n_52, n_53, n_54;
+  wire n_55, n_56, n_57, n_58, n_59, n_60, n_61, n_62;
+  wire n_64, n_65, n_66, n_67, n_68, n_69, n_70, n_71;
+  wire n_72, n_73, n_74, n_75, n_76, n_77, n_78, n_79;
+  wire n_80, n_81, n_82, n_83, n_84, n_85, n_87, n_88;
+  wire n_89, n_90, n_91, n_108, n_109, n_110, n_111, n_112;
+  wire n_113, n_114, n_115, n_116, n_117, n_118, n_119, n_120;
+  wire n_121, n_122, n_123, n_124, n_125, n_126, n_127, n_128;
+  wire n_129, n_130, n_131, n_154, n_155, n_156, n_157, n_158;
+  wire n_159, n_160, n_161, n_162, n_163, n_164, n_165, n_166;
+  wire n_167, n_168, n_173, n_174, power_on, scd_done;
+  dffs_WIDTH3 APERTURE_SETTING_FF(.d ({n_113, n_112, n_111}), .q
+       (aperture_setting), .en (n_114), .clk (clk), .rst (reset));
+  countdown COUNTDOWN_MODULE(.clk (clk), .reset (n_89), .wait_cycles
+       ({shutter_setting_output, output_data[0]}), .write_enable
+       (n_88), .countdown_enable (n_90), .done (scd_done));
   aperture_decoder FSTOP_DECODER(.input_setting (aperture_setting),
        .output_multiplier (aperture_multiplier));
   shutter_decoder SHUTTER_DECODER(.input_setting (shutter_setting),
-       .shutter_wait_time ({UNCONNECTED23, UNCONNECTED22,
-       UNCONNECTED21, UNCONNECTED20, UNCONNECTED19, UNCONNECTED18,
-       UNCONNECTED17, UNCONNECTED16, UNCONNECTED15, UNCONNECTED14,
-       UNCONNECTED13, UNCONNECTED12, UNCONNECTED11, UNCONNECTED10,
-       UNCONNECTED9, UNCONNECTED8, UNCONNECTED7, UNCONNECTED6,
-       UNCONNECTED5, UNCONNECTED4, UNCONNECTED3, UNCONNECTED2,
-       UNCONNECTED1, scd_cycles[8:1], UNCONNECTED0}));
-  dffs_WIDTH3_65 SHUTTER_SETTING_FF(.d ({n_89, n_88, n_87}), .q
-       (shutter_setting), .en (n_164), .clk (clk), .rst (reset));
-  mult_unsigned mul_259_30(.A ({output_data[0], sensor_data[14:0]}), .B
-       (aperture_multiplier), .Z ({n_98, n_99, n_100, n_101, n_102,
-       n_103, n_104, n_105, n_106, n_107, n_108, n_109, n_110, n_111,
-       n_112, n_113}));
-  mult_unsigned_306 mul_259_52(.A ({output_data[0], n_99, n_100, n_101,
-       n_102, n_103, n_104, n_105, n_106, n_107, n_108, n_109, n_110,
-       n_111, n_112, n_113}), .B ({output_data[0], output_data[0],
-       output_data[0], output_data[0], output_data[0], output_data[0],
-       output_data[0], scd_cycles[8:1], output_data[0]}), .Z ({n_136,
-       n_137, n_138, n_139, n_140, n_141, n_142, n_143, n_144, n_145,
-       n_146, n_147, n_148, n_149, n_150, UNCONNECTED24}));
-  INVXL g1841(.A (fstop_inc), .Y (n_84));
-  OAI221X1 g2778(.A0 (n_71), .A1 (n_79), .B0 (shutter_setting[1]), .B1
-       (n_68), .C0 (n_80), .Y (n_92));
-  OAI221X1 g2779(.A0 (n_70), .A1 (n_76), .B0 (aperture_setting[1]), .B1
-       (n_3), .C0 (n_77), .Y (n_88));
-  OAI221X1 g2780(.A0 (shutter_setting[2]), .A1 (n_68), .B0 (n_73), .B1
-       (n_79), .C0 (n_81), .Y (n_93));
-  OAI22XL g2781(.A0 (shutter_setting[0]), .A1 (n_82), .B0
-       (aperture_setting[0]), .B1 (n_3), .Y (n_87));
-  OAI221X1 g2782(.A0 (aperture_setting[2]), .A1 (n_3), .B0 (n_72), .B1
-       (n_76), .C0 (n_83), .Y (n_89));
-  NAND2XL g2783(.A (n_3), .B (n_82), .Y (n_164));
-  AND2XL g2784(.A (output_data_valid), .B (n_140), .Y
-       (output_data[11]));
-  AND2XL g2785(.A (output_data_valid), .B (n_148), .Y (output_data[3]));
-  AND2XL g2786(.A (output_data_valid), .B (n_149), .Y (output_data[2]));
-  AND2XL g2787(.A (output_data_valid), .B (n_137), .Y
-       (output_data[14]));
-  AND2XL g2788(.A (output_data_valid), .B (n_141), .Y
-       (output_data[10]));
-  AND2XL g2789(.A (output_data_valid), .B (n_150), .Y (output_data[1]));
-  AND2XL g2790(.A (output_data_valid), .B (n_142), .Y (output_data[9]));
-  NAND2XL g2791(.A (n_154), .B (n_75), .Y (n_83));
-  AND2XL g2792(.A (output_data_valid), .B (n_143), .Y (output_data[8]));
-  AND2XL g2793(.A (output_data_valid), .B (n_144), .Y (output_data[7]));
-  AND2XL g2794(.A (output_data_valid), .B (n_136), .Y
+       .shutter_wait_time (shutter_setting_output));
+  dffs_WIDTH3_61 SHUTTER_SETTING_FF(.d ({n_110, n_109, n_108}), .q
+       (shutter_setting), .en (n_87), .clk (clk), .rst (reset));
+  mult_unsigned mul_261_30(.A ({output_data[0], sensor_data[14:0]}), .B
+       (aperture_multiplier), .Z ({n_116, n_117, n_118, n_119, n_120,
+       n_121, n_122, n_123, n_124, n_125, n_126, n_127, n_128, n_129,
+       n_130, n_131}));
+  mult_unsigned_197 mul_261_52(.A ({output_data[0], n_117, n_118,
+       n_119, n_120, n_121, n_122, n_123, n_124, n_125, n_126, n_127,
+       n_128, n_129, n_130, n_131}), .B ({shutter_setting_output,
+       output_data[0]}), .Z ({n_154, n_155, n_156, n_157, n_158, n_159,
+       n_160, n_161, n_162, n_163, n_164, n_165, n_166, n_167, n_168,
+       UNCONNECTED}));
+  OAI222XL g2431(.A0 (n_71), .A1 (n_82), .B0 (n_72), .B1 (n_83), .C0
+       (aperture_setting[1]), .C1 (n_173), .Y (n_109));
+  OAI222XL g2432(.A0 (n_73), .A1 (n_81), .B0 (n_74), .B1 (n_80), .C0
+       (shutter_setting[1]), .C1 (n_115), .Y (n_112));
+  OAI222XL g2433(.A0 (n_75), .A1 (n_81), .B0 (shutter_setting[2]), .B1
+       (n_115), .C0 (n_77), .C1 (n_80), .Y (n_113));
+  OAI222XL g2434(.A0 (n_76), .A1 (n_82), .B0 (aperture_setting[2]), .B1
+       (n_173), .C0 (n_78), .C1 (n_83), .Y (n_110));
+  OAI22XL g2435(.A0 (aperture_setting[0]), .A1 (n_85), .B0
+       (shutter_setting[0]), .B1 (n_115), .Y (n_111));
+  OAI22XL g2436(.A0 (shutter_setting[0]), .A1 (n_84), .B0
+       (aperture_setting[0]), .B1 (n_173), .Y (n_108));
+  NAND2XL g2437(.A (n_115), .B (n_85), .Y (n_114));
+  NAND2XL g2438(.A (n_173), .B (n_84), .Y (n_87));
+  NAND3XL g2439(.A (n_115), .B (n_91), .C (n_79), .Y (n_88));
+  AND2XL g2440(.A (output_data_valid), .B (n_154), .Y
        (output_data[15]));
-  AND2XL g2795(.A (output_data_valid), .B (n_138), .Y
+  AND2XL g2441(.A (output_data_valid), .B (n_166), .Y (output_data[3]));
+  AND2XL g2442(.A (output_data_valid), .B (n_158), .Y
+       (output_data[11]));
+  AND2XL g2443(.A (output_data_valid), .B (n_167), .Y (output_data[2]));
+  AND2XL g2444(.A (output_data_valid), .B (n_159), .Y
+       (output_data[10]));
+  AND2XL g2445(.A (output_data_valid), .B (n_168), .Y (output_data[1]));
+  AND2XL g2446(.A (output_data_valid), .B (n_155), .Y
+       (output_data[14]));
+  AND2XL g2447(.A (output_data_valid), .B (n_160), .Y (output_data[9]));
+  AND2X1 g2448(.A (n_80), .B (n_81), .Y (n_85));
+  AND2XL g2449(.A (output_data_valid), .B (n_161), .Y (output_data[8]));
+  AND2XL g2450(.A (output_data_valid), .B (n_162), .Y (output_data[7]));
+  AND2XL g2451(.A (output_data_valid), .B (n_163), .Y (output_data[6]));
+  AND2X1 g2452(.A (n_83), .B (n_82), .Y (n_84));
+  AND2XL g2453(.A (output_data_valid), .B (n_156), .Y
        (output_data[13]));
-  AND2XL g2796(.A (output_data_valid), .B (n_145), .Y (output_data[6]));
-  NOR2XL g2797(.A (n_154), .B (n_90), .Y (n_82));
-  NAND2XL g2798(.A (n_74), .B (n_156), .Y (n_81));
-  AND2XL g2799(.A (output_data_valid), .B (n_139), .Y
+  AND2XL g2454(.A (output_data_valid), .B (n_157), .Y
        (output_data[12]));
-  AND2XL g2800(.A (output_data_valid), .B (n_146), .Y (output_data[5]));
-  AND2XL g2801(.A (output_data_valid), .B (n_147), .Y (output_data[4]));
-  NAND2XL g2802(.A (n_71), .B (n_156), .Y (n_80));
-  AO21X1 g2803(.A0 (current_state[1]), .A1 (n_95), .B0 (n_153), .Y
-       (n_165));
-  OAI22XL g2804(.A0 (shutter_setting[0]), .A1 (n_68), .B0
-       (aperture_setting[0]), .B1 (n_69), .Y (n_91));
-  INVX1 g2805(.A (n_155), .Y (n_79));
-  NOR2XL g2806(.A (n_60), .B (n_69), .Y (n_155));
-  INVX1 g2807(.A (n_158), .Y (n_3));
-  NOR2XL g2808(.A (current_state[1]), .B (n_185), .Y (n_158));
-  NAND2XL g2809(.A (n_69), .B (n_68), .Y (n_94));
-  NOR2X1 g2810(.A (n_59), .B (n_96), .Y (output_data_valid));
-  NOR2XL g2811(.A (current_state[0]), .B (n_69), .Y (n_156));
-  NAND2XL g2812(.A (n_70), .B (n_154), .Y (n_77));
-  INVX1 g2813(.A (n_90), .Y (n_76));
-  NOR3XL g2814(.A (n_59), .B (n_60), .C (n_67), .Y (n_90));
-  NOR3XL g2815(.A (current_state[1]), .B (current_state[0]), .C (n_66),
-       .Y (n_153));
-  AND3XL g2816(.A (n_59), .B (n_60), .C (n_95), .Y (n_159));
-  XNOR2X1 g2817(.A (shutter_setting[2]), .B (n_63), .Y (n_75));
-  XNOR2X1 g2818(.A (aperture_setting[2]), .B (n_62), .Y (n_74));
-  XNOR2X1 g2819(.A (aperture_setting[2]), .B (n_64), .Y (n_73));
-  XNOR2X1 g2820(.A (shutter_setting[2]), .B (n_65), .Y (n_72));
-  NOR2BX1 g2821(.AN (n_62), .B (n_64), .Y (n_71));
-  NOR2BX1 g2823(.AN (n_63), .B (n_65), .Y (n_70));
-  OR2X1 g2824(.A (current_state[1]), .B (n_67), .Y (n_69));
-  OR2X1 g2825(.A (n_60), .B (n_66), .Y (n_96));
-  INVX1 g2826(.A (n_68), .Y (n_157));
-  NAND2XL g2827(.A (n_95), .B (n_61), .Y (n_68));
-  NOR2BX1 g2828(.AN (n_61), .B (n_66), .Y (n_152));
-  NOR2BX1 g2829(.AN (n_61), .B (n_67), .Y (n_154));
-  NAND2BXL g2830(.AN (current_state[3]), .B (current_state[2]), .Y
+  AND2XL g2455(.A (output_data_valid), .B (n_164), .Y (output_data[5]));
+  AND2XL g2456(.A (output_data_valid), .B (n_165), .Y (output_data[4]));
+  NOR3BXL g2457(.AN (current_state[3]), .B (current_state[0]), .C
+       (n_62), .Y (n_90));
+  NAND3XL g2458(.A (current_state[2]), .B (current_state[1]), .C
+       (n_66), .Y (n_83));
+  NAND3XL g2459(.A (current_state[2]), .B (current_state[1]), .C
+       (n_69), .Y (n_82));
+  NOR3BX1 g2460(.AN (current_state[3]), .B (n_6), .C (n_62), .Y
+       (output_data_valid));
+  NAND3BXL g2461(.AN (current_state[1]), .B (current_state[2]), .C
+       (n_69), .Y (n_81));
+  NAND3BXL g2462(.AN (current_state[1]), .B (current_state[2]), .C
+       (n_66), .Y (n_80));
+  NAND3XL g2463(.A (current_state[3]), .B (n_6), .C (n_68), .Y (n_79));
+  CLKXOR2X1 g2464(.A (shutter_setting[2]), .B (n_67), .Y (n_78));
+  CLKXOR2X1 g2465(.A (aperture_setting[2]), .B (n_64), .Y (n_77));
+  XNOR2X1 g2466(.A (shutter_setting[2]), .B (n_65), .Y (n_76));
+  XNOR2X1 g2467(.A (aperture_setting[2]), .B (n_70), .Y (n_75));
+  INVX1 g2468(.A (n_73), .Y (n_74));
+  NOR2BX1 g2469(.AN (n_64), .B (n_70), .Y (n_73));
+  NAND2BXL g2470(.AN (n_62), .B (n_66), .Y (n_115));
+  INVX1 g2471(.A (n_71), .Y (n_72));
+  NOR2BX1 g2472(.AN (n_67), .B (n_65), .Y (n_71));
+  AND2X1 g2473(.A (n_68), .B (n_66), .Y (n_89));
+  NAND2XL g2474(.A (n_68), .B (n_69), .Y (n_173));
+  NAND2BXL g2475(.AN (n_62), .B (n_69), .Y (n_91));
+  NOR2XL g2476(.A (aperture_setting[1]), .B (aperture_setting[0]), .Y
+       (n_70));
+  NOR2XL g2477(.A (current_state[3]), .B (n_6), .Y (n_69));
+  NOR2XL g2478(.A (current_state[1]), .B (current_state[2]), .Y (n_68));
+  NAND2XL g2479(.A (shutter_setting[1]), .B (shutter_setting[0]), .Y
        (n_67));
-  NAND2BXL g2831(.AN (current_state[2]), .B (current_state[3]), .Y
-       (n_66));
-  NOR2XL g2832(.A (shutter_setting[1]), .B (shutter_setting[0]), .Y
+  NOR2XL g2480(.A (current_state[0]), .B (current_state[3]), .Y (n_66));
+  NOR2XL g2481(.A (shutter_setting[1]), .B (shutter_setting[0]), .Y
        (n_65));
-  NOR2XL g2833(.A (current_state[2]), .B (current_state[3]), .Y (n_95));
-  NOR2XL g2834(.A (aperture_setting[1]), .B (aperture_setting[0]), .Y
+  NAND2XL g2482(.A (aperture_setting[1]), .B (aperture_setting[0]), .Y
        (n_64));
-  NAND2XL g2835(.A (shutter_setting[1]), .B (shutter_setting[0]), .Y
-       (n_63));
-  NAND2XL g2836(.A (aperture_setting[1]), .B (aperture_setting[0]), .Y
-       (n_62));
-  NOR2XL g2837(.A (current_state[0]), .B (n_59), .Y (n_61));
-  NAND4XL g3534(.A (n_39), .B (n_30), .C (n_45), .D (n_53), .Y (n_58));
-  NAND3BXL g3536(.AN (n_47), .B (n_186), .C (n_52), .Y (n_57));
-  NAND3BXL g3537(.AN (n_47), .B (n_30), .C (n_54), .Y (n_56));
-  NAND4XL g3538(.A (n_186), .B (n_39), .C (n_43), .D (n_51), .Y (n_55));
-  AOI222X1 g3539(.A0 (current_state[2]), .A1 (n_50), .B0 (n_25), .B1
-       (n_27), .C0 (n_10), .C1 (n_32), .Y (n_54));
-  AOI221X1 g3540(.A0 (current_state[0]), .A1 (n_50), .B0 (n_152), .B1
-       (scd_done), .C0 (n_48), .Y (n_53));
-  AOI221X1 g3541(.A0 (current_state[1]), .A1 (n_50), .B0
-       (prev_mode_state[1]), .B1 (n_28), .C0 (n_49), .Y (n_52));
-  NAND2XL g3542(.A (current_state[3]), .B (n_50), .Y (n_51));
-  OAI32X1 g3543(.A0 (n_10), .A1 (n_158), .A2 (n_0), .B0 (shutter_btn),
-       .B1 (n_183), .Y (n_50));
-  OAI22XL g3544(.A0 (n_2), .A1 (n_44), .B0 (n_14), .B1 (n_9), .Y
-       (n_49));
-  OAI221X1 g3545(.A0 (n_14), .A1 (n_3), .B0 (n_2), .B1 (n_41), .C0
-       (n_34), .Y (n_48));
-  OAI31X1 g3546(.A0 (n_17), .A1 (n_22), .A2 (n_37), .B0 (n_45), .Y
-       (n_47));
-  NAND2BXL g3548(.AN (n_23), .B (n_42), .Y (n_45));
-  AOI221X1 g3549(.A0 (n_11), .A1 (n_158), .B0 (mode_inc), .B1 (n_157),
-       .C0 (n_40), .Y (n_44));
-  OAI2BB1X1 g3550(.A0N (n_35), .A1N (n_38), .B0 (n_18), .Y (n_43));
-  NOR3BXL g3551(.AN (n_22), .B (n_17), .C (n_37), .Y (n_42));
-  AOI22XL g3552(.A0 (n_10), .A1 (n_36), .B0 (n_11), .B1 (n_157), .Y
-       (n_41));
-  NOR2XL g3553(.A (mode_inc), .B (n_38), .Y (n_40));
-  NAND3BXL g3554(.AN (n_31), .B (n_18), .C (n_157), .Y (n_39));
-  NAND2BXL g3555(.AN (n_31), .B (n_33), .Y (n_38));
-  NOR2XL g3556(.A (n_157), .B (n_33), .Y (n_37));
-  OAI31X1 g3557(.A0 (mode_dec), .A1 (n_25), .A2 (n_26), .B0 (n_4), .Y
-       (n_36));
-  NAND3XL g3558(.A (shutter_btn), .B (n_29), .C (n_158), .Y (n_35));
-  NAND2XL g3559(.A (prev_mode_state[0]), .B (n_28), .Y (n_34));
-  AND2X1 g3560(.A (n_10), .B (n_29), .Y (n_33));
-  NOR2XL g3561(.A (n_17), .B (n_29), .Y (n_32));
-  NAND3XL g3563(.A (shutter_btn), .B (n_22), .C (n_23), .Y (n_31));
-  NAND3BXL g3564(.AN (n_26), .B (n_24), .C (n_27), .Y (n_30));
-  DFFSHQX1 \prev_mode_state_reg[0] (.SN (n_1), .CK (clk), .D (n_21), .Q
+  NAND2BX1 g2(.AN (current_state[2]), .B (current_state[1]), .Y (n_62));
+  DFFRX1 power_on_reg(.RN (n_4), .CK (power_btn), .D (power_on), .Q
+       (UNCONNECTED0), .QN (power_on));
+  DFFSHQX1 \prev_mode_state_reg[0] (.SN (n_4), .CK (clk), .D (n_30), .Q
        (prev_mode_state[0]));
-  DFFRHQX1 \prev_mode_state_reg[1] (.RN (n_1), .CK (clk), .D (n_20), .Q
+  SDFFRHQX1 \prev_mode_state_reg[1] (.RN (n_4), .CK (clk), .D
+       (prev_mode_state[1]), .SI (current_state[1]), .SE (n_19), .Q
        (prev_mode_state[1]));
-  AND2X1 g3567(.A (n_26), .B (n_24), .Y (n_29));
-  NAND4BXL g3568(.AN (n_154), .B (n_12), .C (n_6), .D (n_8), .Y (n_28));
-  NOR2XL g3569(.A (n_17), .B (n_3), .Y (n_27));
-  OAI31X1 g3570(.A0 (aperture_setting[0]), .A1 (aperture_setting[2]),
-       .A2 (aperture_setting[1]), .B0 (fstop_dec), .Y (n_26));
-  INVX1 g3571(.A (n_25), .Y (n_24));
-  AOI31X1 g3572(.A0 (aperture_setting[1]), .A1 (aperture_setting[0]),
-       .A2 (aperture_setting[2]), .B0 (n_84), .Y (n_25));
-  OAI31X1 g3573(.A0 (shutter_setting[0]), .A1 (shutter_setting[2]), .A2
-       (shutter_setting[1]), .B0 (shutter_dec), .Y (n_23));
-  NAND2XL g3574(.A (shutter_inc), .B (n_15), .Y (n_22));
-  OAI2BB1X1 g3575(.A0N (prev_mode_state[0]), .A1N (n_13), .B0 (n_185),
-       .Y (n_21));
-  OAI2BB1X1 g3576(.A0N (prev_mode_state[1]), .A1N (n_185), .B0 (n_13),
-       .Y (n_20));
-  INVX1 g3578(.A (n_18), .Y (n_17));
-  NOR2XL g3579(.A (n_11), .B (n_2), .Y (n_18));
-  NOR4X1 g3580(.A (n_154), .B (output_data[0]), .C (n_90), .D
-       (output_data_valid), .Y (n_16));
-  NAND3XL g3581(.A (shutter_setting[0]), .B (shutter_setting[1]), .C
-       (shutter_setting[2]), .Y (n_15));
-  NAND3XL g3582(.A (mode_dec), .B (n_4), .C (power_on), .Y (n_14));
-  NAND2XL g3584(.A (current_state[1]), .B (n_95), .Y (n_13));
-  NAND2XL g3585(.A (power_on), .B (n_159), .Y (n_12));
-  OR2X1 g3586(.A (mode_dec), .B (mode_inc), .Y (n_11));
-  INVX1 g3587(.A (n_9), .Y (n_10));
-  NAND2BXL g3588(.AN (n_185), .B (current_state[1]), .Y (n_9));
-  NOR2XL g3589(.A (n_90), .B (output_data_valid), .Y (n_8));
-  NOR2XL g3591(.A (n_156), .B (n_155), .Y (n_6));
-  INVX1 g3593(.A (mode_inc), .Y (n_4));
-  INVX1 g3597(.A (reset), .Y (n_1));
-  NAND4BX1 g2(.AN (n_157), .B (n_6), .C (n_186), .D (n_16), .Y (n_0));
-  AOI21X1 g3598(.A0 (n_29), .A1 (n_27), .B0 (n_42), .Y (n_183));
-  NAND2XL g3600(.A (current_state[0]), .B (n_95), .Y (n_185));
-  DFFRX1 \current_state_reg[0] (.RN (n_1), .CK (clk), .D (n_58), .Q
-       (current_state[0]), .QN (n_60));
-  DFFRX1 \current_state_reg[1] (.RN (n_1), .CK (clk), .D (n_57), .Q
-       (current_state[1]), .QN (n_59));
-  DFFRX1 power_on_reg(.RN (n_1), .CK (power_btn), .D (n_2), .Q
-       (power_on), .QN (n_2));
-  AOI2BB1X1 g3607(.A0N (current_state[1]), .A1N (n_96), .B0 (n_153), .Y
-       (n_186));
-  DFFRHQX1 \current_state_reg[2] (.RN (n_1), .CK (clk), .D (n_56), .Q
-       (current_state[2]));
-  DFFRHQX1 \current_state_reg[3] (.RN (n_1), .CK (clk), .D (n_55), .Q
-       (current_state[3]));
+  OAI211X1 g2809(.A0 (current_state[2]), .A1 (n_41), .B0 (n_52), .C0
+       (n_59), .Y (n_61));
+  OAI211X1 g2810(.A0 (n_2), .A1 (n_16), .B0 (n_31), .C0 (n_58), .Y
+       (n_60));
+  AOI21XL g2812(.A0 (prev_mode_state[0]), .A1 (n_24), .B0 (n_57), .Y
+       (n_59));
+  AOI22XL g2813(.A0 (n_11), .A1 (n_55), .B0 (prev_mode_state[1]), .B1
+       (n_9), .Y (n_58));
+  AOI211XL g2814(.A0 (current_state[0]), .A1 (n_54), .B0 (n_29), .C0
+       (n_48), .Y (n_57));
+  OAI211X1 g2815(.A0 (n_29), .A1 (n_53), .B0 (n_16), .C0 (n_22), .Y
+       (n_56));
+  OAI222XL g2816(.A0 (n_5), .A1 (n_40), .B0 (current_state[2]), .B1
+       (n_51), .C0 (n_23), .C1 (n_32), .Y (n_55));
+  NAND2XL g2818(.A (n_26), .B (n_49), .Y (n_54));
+  AOI32X1 g2819(.A0 (shutter_btn), .A1 (current_state[0]), .A2 (n_45),
+       .B0 (n_23), .B1 (n_42), .Y (n_53));
+  AOI22XL g2820(.A0 (n_21), .A1 (n_47), .B0 (current_state[0]), .B1
+       (n_15), .Y (n_52));
+  NAND2XL g2821(.A (n_14), .B (n_46), .Y (n_51));
+  OAI21XL g2822(.A0 (n_29), .A1 (n_44), .B0 (n_16), .Y (n_50));
+  OAI221X1 g2823(.A0 (n_2), .A1 (n_38), .B0 (shutter_btn), .B1 (n_36),
+       .C0 (n_25), .Y (n_49));
+  OAI33X1 g2824(.A0 (n_7), .A1 (n_34), .A2 (n_37), .B0
+       (current_state[1]), .B1 (prev_mode_state[0]), .B2
+       (current_state[0]), .Y (n_48));
+  OAI21XL g2825(.A0 (n_5), .A1 (n_2), .B0 (n_43), .Y (n_47));
+  OAI222XL g2826(.A0 (n_7), .A1 (n_42), .B0 (n_10), .B1 (n_35), .C0
+       (current_state[1]), .C1 (n_12), .Y (n_46));
+  NOR2XL g2827(.A (n_35), .B (n_174), .Y (n_45));
+  AOI21XL g2828(.A0 (current_state[0]), .A1 (n_35), .B0 (n_174), .Y
+       (n_44));
+  AOI33XL g2829(.A0 (mode_dec), .A1 (n_5), .A2 (n_17), .B0
+       (prev_mode_state[0]), .B1 (n_13), .B2 (n_6), .Y (n_43));
+  AND2X1 g2832(.A (n_34), .B (n_27), .Y (n_42));
+  NAND3XL g2833(.A (current_state[3]), .B (n_23), .C (scd_done), .Y
+       (n_41));
+  NOR2BX1 g2834(.AN (n_12), .B (n_33), .Y (n_40));
+  INVX1 g2836(.A (n_37), .Y (n_38));
+  OAI22XL g2837(.A0 (shutter_inc), .A1 (n_27), .B0 (n_3), .B1 (n_20),
+       .Y (n_37));
+  NOR2XL g2838(.A (n_2), .B (n_28), .Y (n_36));
+  NAND2XL g2839(.A (n_26), .B (n_25), .Y (n_35));
+  AND2X1 g2840(.A (n_28), .B (shutter_btn), .Y (n_34));
+  NOR2BX1 g2841(.AN (n_17), .B (current_state[2]), .Y (n_33));
+  OAI211X1 g2842(.A0 (prev_mode_state[1]), .A1 (n_8), .B0 (mode_dec),
+       .C0 (n_5), .Y (n_32));
+  OAI211X1 g2843(.A0 (prev_mode_state[1]), .A1 (n_10), .B0
+       (current_state[3]), .C0 (n_1), .Y (n_31));
+  MX2X1 g2844(.A (prev_mode_state[0]), .B (current_state[0]), .S0
+       (n_19), .Y (n_30));
+  NAND2XL g2845(.A (n_14), .B (n_21), .Y (n_29));
+  NAND2XL g2846(.A (shutter_inc), .B (n_20), .Y (n_28));
+  OAI31X1 g2847(.A0 (shutter_setting[0]), .A1 (shutter_setting[2]), .A2
+       (shutter_setting[1]), .B0 (shutter_dec), .Y (n_27));
+  NAND2XL g2848(.A (fstop_inc), .B (n_18), .Y (n_26));
+  OAI31X1 g2849(.A0 (aperture_setting[0]), .A1 (aperture_setting[2]),
+       .A2 (aperture_setting[1]), .B0 (fstop_dec), .Y (n_25));
+  OAI22XL g2850(.A0 (n_0), .A1 (n_10), .B0 (current_state[3]), .B1
+       (n_1), .Y (n_24));
+  INVX1 g2851(.A (n_7), .Y (n_23));
+  NAND2XL g2852(.A (current_state[3]), .B (n_10), .Y (n_22));
+  AND2X1 g2853(.A (n_11), .B (n_1), .Y (n_21));
+  NAND3XL g2854(.A (shutter_setting[2]), .B (shutter_setting[0]), .C
+       (shutter_setting[1]), .Y (n_20));
+  NAND3XL g2855(.A (n_91), .B (n_173), .C (n_115), .Y (n_19));
+  NAND3XL g2856(.A (aperture_setting[0]), .B (aperture_setting[1]), .C
+       (aperture_setting[2]), .Y (n_18));
+  OAI21XL g2857(.A0 (current_state[1]), .A1 (n_6), .B0 (n_7), .Y
+       (n_17));
+  INVX1 g2859(.A (n_15), .Y (n_16));
+  NOR2XL g2860(.A (n_0), .B (n_1), .Y (n_15));
+  INVX1 g2861(.A (n_14), .Y (n_13));
+  NOR2XL g2862(.A (mode_dec), .B (mode_inc), .Y (n_14));
+  NAND2XL g2863(.A (prev_mode_state[1]), .B (n_6), .Y (n_12));
+  NOR2XL g2864(.A (current_state[3]), .B (power_on), .Y (n_11));
+  NAND2XL g2865(.A (current_state[1]), .B (current_state[0]), .Y
+       (n_10));
+  NOR2XL g2866(.A (current_state[3]), .B (n_1), .Y (n_9));
+  NOR2XL g2867(.A (current_state[2]), .B (n_6), .Y (n_8));
+  NAND2XL g2868(.A (current_state[1]), .B (n_6), .Y (n_7));
+  INVX1 g2870(.A (mode_inc), .Y (n_5));
+  INVX1 g2871(.A (reset), .Y (n_4));
+  INVX1 g2872(.A (shutter_dec), .Y (n_3));
+  AOI21X1 g2876(.A0 (n_27), .A1 (n_28), .B0 (n_2), .Y (n_174));
+  DFFRX1 \current_state_reg[0] (.RN (n_4), .CK (clk), .D (n_61), .Q
+       (current_state[0]), .QN (n_6));
+  DFFRX1 \current_state_reg[1] (.RN (n_4), .CK (clk), .D (n_60), .Q
+       (current_state[1]), .QN (n_2));
+  DFFRX1 \current_state_reg[2] (.RN (n_4), .CK (clk), .D (n_50), .Q
+       (current_state[2]), .QN (n_1));
+  DFFRX1 \current_state_reg[3] (.RN (n_4), .CK (clk), .D (n_56), .Q
+       (current_state[3]), .QN (n_0));
   TIELO tie_0_cell(.Y (output_data[0]));
 endmodule
 
