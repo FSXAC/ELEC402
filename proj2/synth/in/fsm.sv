@@ -110,7 +110,7 @@ module fsm(
 	always_comb begin
 
 		// Default (cover all combinational cases)
-		next_state = current_state;
+		next_state <= current_state;
 
 		case (current_state)
 
@@ -167,7 +167,7 @@ module fsm(
 	end
 
 	/* State sequential logic */
-	always_ff @(posedge clk, negedge reset) begin
+	always_ff @(posedge clk, posedge reset) begin
 		if (reset) begin
 			current_state <= ST_IDLE;
 		end else begin
