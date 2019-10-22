@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      p5h0b
+HostName                       ssh-soc.ece.ubc.ca
+ProcessIdentifier              5415
+ProcessCreationTime_UTC        1571720024
+ProcessCreationTime_Readable   Mon Oct 21 21:53:44 2019 PDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /ubc/ece/home/ugrads/p/p5h0b/elec402/ELEC402_projects/proj3/cds/ELEC402/BUFFER/schematic/sch.oa.cdslck
+TimeEditLocked                 Mon Oct 21 23:06:22 2019 PDT

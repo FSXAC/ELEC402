@@ -1,0 +1,26 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "BUFFER"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/ubc/ece/home/ugrads/p/p5h0b/elec402/ELEC402_projects/proj3/cds/simulation/BUFFER/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "ELEC402/BUFFER/schematic" "BUFFER" )
+ )
+( term
+ )
+( param
+ )
+( "BUFFER" "ihnl/cds0/map" )
+ )

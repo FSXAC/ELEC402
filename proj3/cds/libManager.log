@@ -1,0 +1,26 @@
+\o Program:		@(#)$CDS: libManager version 6.1.6 - CAT33 08/24/2014 13:49 (sjfnl844) $
+\o Sub version:		sub-version  s012 
+\o Arguments:		-mpssession virtuoso5415 -mpshost ssh-soc 
+\o Working Directory:	ssh-soc:/ubc/ece/home/ugrads/p/p5h0b/elec402/ELEC402_projects/proj3/cds
+\o 64-bit offsets
+\o Qt version: 		4.7.2
+\o Log file is "/ubc/ece/home/ugrads/p/p5h0b/elec402/ELEC402_projects/proj3/cds/libManager.log".
+\o Opening libManager window.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(165 339 702 421))
+\o changeWorkingDir("/ubc/ece/home/ugrads/p/p5h0b/elec402/ELEC402_projects/proj3/cds") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a cdsLibManager->libListBox->value = "ELEC402"
+\a cdsLibManager->cellListBox->value = "BUFFER"
+\a cdsLibManager->cellLineEdit->value = "BUFFER"
+\a cdsLibManager->libLineEdit->value = "ELEC402"
+\a cdsLibManager->viewListBox->value = "spectre_state1"
+\a cdsLibManager->viewLineEdit->value = "spectre_state1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)

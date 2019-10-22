@@ -1,0 +1,13 @@
+CADENCE IHNL01070
+$model
+ELEC402/BUFFER/schematic BUFFER
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+vin vin
+vdd vdd
+CL CL
+f f
+$endparam

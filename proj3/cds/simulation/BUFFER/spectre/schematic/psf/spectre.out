@@ -1,0 +1,428 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 13.1.1.292.isr12 64bit -- 3 Sep 2014
+Copyright (C) 1989-2014 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: p5h0b   Host: ssh-soc   HostID: 5D0A1426   PID: 57737
+Memory  available: 3.7417 GB  physical: 67.6866 GB
+CPU Type: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
+          Processor PhysicalID CoreID Frequency Load
+              0         0        0     2194.9    18.4
+              1         2        0     2194.9    12.9
+              2         4        0     2194.9    18.6
+              3         6        0     2194.9     7.5
+              4         8        0     2194.9     5.4
+              5         10        0     2194.9     6.1
+              6         12        0     2194.9     6.1
+              7         14        0     2194.9     6.4
+              8         16        0     2194.9     6.1
+              9         18        0     2194.9     5.6
+             10         20        0     2194.9     6.0
+             11         22        0     2194.9     5.6
+
+
+Simulating `input.scs' on ssh-soc at 11:13:37 PM, Mon Oct 21, 2019 (process id: 57737).
+Current working directory: /ubc/ece/home/ugrads/p/p5h0b/elec402/ELEC402_projects/proj3/cds/simulation/BUFFER/spectre/schematic/netlist
+Command line:
+    /CMC/tools/cadence/MMSIM13.11.292_lnx86/tools/bin/spectre -64  \
+        input.scs +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre2_5415_11 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 57737
+
+Loading /CMC/tools/cadence/MMSIM13.11.292_lnx86/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /CMC/tools/cadence/MMSIM13.11.292_lnx86/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /CMC/tools/cadence/MMSIM13.11.292_lnx86/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /CMC/tools/cadence/MMSIM13.11.292_lnx86/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /CMC/tools/cadence/MMSIM13.11.292_lnx86/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /ubc/ece/home/ugrads/p/p5h0b/elec402/ELEC402_projects/proj3/cds/simulation/BUFFER/spectre/schematic/netlist/input.scs
+Reading link:  /CMC
+Reading file:  /ubc/ece/data/cmc2/tools/cadence/MMSIM13.11.292_lnx86/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/models/spectre/gpdk045.scs
+Reading file:  /ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/models/spectre/gpdk045_mos.scs
+Reading file:  /ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/models/spectre/gpdk045_diode.scs
+Reading file:  /ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/models/spectre/gpdk045_bipolar.scs
+Reading file:  /ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/models/spectre/gpdk045_mimcap.scs
+Reading file:  /ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/models/spectre/gpdk045_moscap.scs
+Reading file:  /ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/models/spectre/gpdk045_resistor.scs
+Reading file:  /ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/models/spectre/gpdk045_inductor.scs
+Time for NDB Parsing: CPU = 633.904 ms, elapsed = 877.336 ms.
+Time accumulated: CPU = 665.898 ms, elapsed = 877.344 ms.
+Peak resident memory used = 56.4 Mbytes.
+
+Reading link:  /CMC/tools/cadence/MMSIM13.11.292_lnx86/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /ubc/ece/data/cmc2/tools/cadence/MMSIM13.11.292_lnx86/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /CMC/tools/cadence/MMSIM13.11.292_lnx86/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /ubc/ece/data/cmc2/tools/cadence/MMSIM13.11.292_lnx86/tools.lnx86/spectre/etc/ahdl/constants.vams
+Existing shared object for module bsource_08102a is up to date.
+Installed compiled interface for bsource_08102a.
+Time for Elaboration: CPU = 40.993 ms, elapsed = 71.4259 ms.
+Time accumulated: CPU = 707.891 ms, elapsed = 949.066 ms.
+Peak resident memory used = 62.6 Mbytes.
+
+Time for EDB Visiting: CPU = 0 s, elapsed = 818.014 us.
+Time accumulated: CPU = 708.891 ms, elapsed = 950.15 ms.
+Peak resident memory used = 63.1 Mbytes.
+
+
+Global user options:
+             reltol = 0.001
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               tnom = 27
+             scalem = 1
+              scale = 1
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Circuit inventory:
+              nodes 5
+              bsim4 2     
+     bsource_08102a 2     
+          capacitor 1     
+            vsource 2     
+
+Analysis and control statement inventory:
+                 dc 1     
+               info 6     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 3 ms, elapsed = 15.0468 ms.
+Time accumulated: CPU = 712.891 ms, elapsed = 965.433 ms.
+Peak resident memory used = 64.1 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre2_5415_11, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+********************************
+DC Analysis `dc': vin = (0 -> 1)
+********************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    hysteresis = on
+
+Notice from spectre at vin = 0 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(NM0:int_s) = 24.118 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at vin = 20e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(NM0:int_s) = 24.0864 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at vin = 40e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(NM0:int_s) = 23.9844 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at vin = 60e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(NM0:int_s) = 23.8527 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: vin = 60e-03         (3 %), step = 20e-03          (1 %)
+
+Notice from spectre at vin = 80e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(NM0:int_s) = 23.6945 mV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed.
+
+    dc: vin = 80e-03         (4 %), step = 20e-03          (1 %)
+    dc: vin = 100e-03        (5 %), step = 20e-03          (1 %)
+    dc: vin = 120e-03        (6 %), step = 20e-03          (1 %)
+    dc: vin = 140e-03        (7 %), step = 20e-03          (1 %)
+    dc: vin = 160e-03        (8 %), step = 20e-03          (1 %)
+    dc: vin = 180e-03        (9 %), step = 20e-03          (1 %)
+    dc: vin = 200e-03       (10 %), step = 20e-03          (1 %)
+    dc: vin = 220e-03       (11 %), step = 20e-03          (1 %)
+    dc: vin = 240e-03       (12 %), step = 20e-03          (1 %)
+    dc: vin = 260e-03       (13 %), step = 20e-03          (1 %)
+    dc: vin = 280e-03       (14 %), step = 20e-03          (1 %)
+    dc: vin = 300e-03       (15 %), step = 20e-03          (1 %)
+    dc: vin = 320e-03       (16 %), step = 20e-03          (1 %)
+    dc: vin = 340e-03       (17 %), step = 20e-03          (1 %)
+    dc: vin = 360e-03       (18 %), step = 20e-03          (1 %)
+    dc: vin = 380e-03       (19 %), step = 20e-03          (1 %)
+    dc: vin = 400e-03       (20 %), step = 20e-03          (1 %)
+    dc: vin = 420e-03       (21 %), step = 20e-03          (1 %)
+    dc: vin = 440e-03       (22 %), step = 20e-03          (1 %)
+    dc: vin = 460e-03       (23 %), step = 20e-03          (1 %)
+    dc: vin = 480e-03       (24 %), step = 20e-03          (1 %)
+    dc: vin = 500e-03       (25 %), step = 20e-03          (1 %)
+    dc: vin = 520e-03       (26 %), step = 20e-03          (1 %)
+    dc: vin = 540e-03       (27 %), step = 20e-03          (1 %)
+    dc: vin = 560e-03       (28 %), step = 20e-03          (1 %)
+    dc: vin = 580e-03       (29 %), step = 20e-03          (1 %)
+    dc: vin = 600e-03       (30 %), step = 20e-03          (1 %)
+    dc: vin = 620e-03       (31 %), step = 20e-03          (1 %)
+    dc: vin = 640e-03       (32 %), step = 20e-03          (1 %)
+    dc: vin = 660e-03       (33 %), step = 20e-03          (1 %)
+    dc: vin = 680e-03       (34 %), step = 20e-03          (1 %)
+    dc: vin = 700e-03       (35 %), step = 20e-03          (1 %)
+    dc: vin = 720e-03       (36 %), step = 20e-03          (1 %)
+    dc: vin = 740e-03       (37 %), step = 20e-03          (1 %)
+    dc: vin = 760e-03       (38 %), step = 20e-03          (1 %)
+    dc: vin = 780e-03       (39 %), step = 20e-03          (1 %)
+    dc: vin = 800e-03       (40 %), step = 20e-03          (1 %)
+    dc: vin = 820e-03       (41 %), step = 20e-03          (1 %)
+    dc: vin = 840e-03       (42 %), step = 20e-03          (1 %)
+    dc: vin = 860e-03       (43 %), step = 20e-03          (1 %)
+    dc: vin = 880e-03       (44 %), step = 20e-03          (1 %)
+    dc: vin = 900e-03       (45 %), step = 20e-03          (1 %)
+    dc: vin = 920e-03       (46 %), step = 20e-03          (1 %)
+    dc: vin = 940e-03       (47 %), step = 20e-03          (1 %)
+    dc: vin = 960e-03       (48 %), step = 20e-03          (1 %)
+    dc: vin = 980e-03       (49 %), step = 20e-03          (1 %)
+    dc: vin = 1             (50 %), step = 20e-03          (1 %)
+    dc: vin = 980e-03       (51 %), step = -20e-03         (1 %)
+    dc: vin = 960e-03       (52 %), step = -20e-03         (1 %)
+    dc: vin = 940e-03       (53 %), step = -20e-03         (1 %)
+    dc: vin = 920e-03       (54 %), step = -20e-03         (1 %)
+    dc: vin = 900e-03       (55 %), step = -20e-03         (1 %)
+    dc: vin = 880e-03       (56 %), step = -20e-03         (1 %)
+    dc: vin = 860e-03       (57 %), step = -20e-03         (1 %)
+    dc: vin = 840e-03       (58 %), step = -20e-03         (1 %)
+    dc: vin = 820e-03       (59 %), step = -20e-03         (1 %)
+    dc: vin = 800e-03       (60 %), step = -20e-03         (1 %)
+    dc: vin = 780e-03       (61 %), step = -20e-03         (1 %)
+    dc: vin = 760e-03       (62 %), step = -20e-03         (1 %)
+    dc: vin = 740e-03       (63 %), step = -20e-03         (1 %)
+    dc: vin = 720e-03       (64 %), step = -20e-03         (1 %)
+    dc: vin = 700e-03       (65 %), step = -20e-03         (1 %)
+    dc: vin = 680e-03       (66 %), step = -20e-03         (1 %)
+    dc: vin = 660e-03       (67 %), step = -20e-03         (1 %)
+    dc: vin = 640e-03       (68 %), step = -20e-03         (1 %)
+    dc: vin = 620e-03       (69 %), step = -20e-03         (1 %)
+    dc: vin = 600e-03       (70 %), step = -20e-03         (1 %)
+    dc: vin = 580e-03       (71 %), step = -20e-03         (1 %)
+    dc: vin = 560e-03       (72 %), step = -20e-03         (1 %)
+    dc: vin = 540e-03       (73 %), step = -20e-03         (1 %)
+    dc: vin = 520e-03       (74 %), step = -20e-03         (1 %)
+    dc: vin = 500e-03       (75 %), step = -20e-03         (1 %)
+    dc: vin = 480e-03       (76 %), step = -20e-03         (1 %)
+    dc: vin = 460e-03       (77 %), step = -20e-03         (1 %)
+    dc: vin = 440e-03       (78 %), step = -20e-03         (1 %)
+    dc: vin = 420e-03       (79 %), step = -20e-03         (1 %)
+    dc: vin = 400e-03       (80 %), step = -20e-03         (1 %)
+    dc: vin = 380e-03       (81 %), step = -20e-03         (1 %)
+    dc: vin = 360e-03       (82 %), step = -20e-03         (1 %)
+    dc: vin = 340e-03       (83 %), step = -20e-03         (1 %)
+    dc: vin = 320e-03       (84 %), step = -20e-03         (1 %)
+    dc: vin = 300e-03       (85 %), step = -20e-03         (1 %)
+    dc: vin = 280e-03       (86 %), step = -20e-03         (1 %)
+    dc: vin = 260e-03       (87 %), step = -20e-03         (1 %)
+    dc: vin = 240e-03       (88 %), step = -20e-03         (1 %)
+    dc: vin = 220e-03       (89 %), step = -20e-03         (1 %)
+    dc: vin = 200e-03       (90 %), step = -20e-03         (1 %)
+    dc: vin = 180e-03       (91 %), step = -20e-03         (1 %)
+    dc: vin = 160e-03       (92 %), step = -20e-03         (1 %)
+    dc: vin = 140e-03       (93 %), step = -20e-03         (1 %)
+    dc: vin = 120e-03       (94 %), step = -20e-03         (1 %)
+    dc: vin = 100e-03       (95 %), step = -20e-03         (1 %)
+    dc: vin = 80e-03        (96 %), step = -20e-03         (1 %)
+    dc: vin = 60e-03        (97 %), step = -20e-03         (1 %)
+    dc: vin = 40e-03        (98 %), step = -20e-03         (1 %)
+    dc: vin = 20e-03        (99 %), step = -20e-03         (1 %)
+    dc: vin = 0            (100 %), step = -20e-03         (1 %)
+Total time required for dc analysis `dc': CPU = 88.986 ms, elapsed = 129.67 ms.
+Time accumulated: CPU = 803.877 ms, elapsed = 1.35597 s.
+Peak resident memory used = 65.1 Mbytes.
+
+
+Notice from spectre.
+    96 notices suppressed.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+********************************
+DC Analysis `dc': vin = (0 -> 1)
+********************************
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    hysteresis = on
+
+Notice from spectre at vin = 0 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(NM0:int_s) = 24.118 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at vin = 20e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(NM0:int_s) = 24.0864 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at vin = 40e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(NM0:int_s) = 23.9844 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+Notice from spectre at vin = 60e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(NM0:int_s) = 23.8527 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+    dc: vin = 60e-03         (3 %), step = 20e-03          (1 %)
+
+Notice from spectre at vin = 80e-03 during DC analysis `dc'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(NM0:int_s) = 23.6945 mV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed.
+
+    dc: vin = 80e-03         (4 %), step = 20e-03          (1 %)
+    dc: vin = 100e-03        (5 %), step = 20e-03          (1 %)
+    dc: vin = 120e-03        (6 %), step = 20e-03          (1 %)
+    dc: vin = 140e-03        (7 %), step = 20e-03          (1 %)
+    dc: vin = 160e-03        (8 %), step = 20e-03          (1 %)
+    dc: vin = 180e-03        (9 %), step = 20e-03          (1 %)
+    dc: vin = 200e-03       (10 %), step = 20e-03          (1 %)
+    dc: vin = 220e-03       (11 %), step = 20e-03          (1 %)
+    dc: vin = 240e-03       (12 %), step = 20e-03          (1 %)
+    dc: vin = 260e-03       (13 %), step = 20e-03          (1 %)
+    dc: vin = 280e-03       (14 %), step = 20e-03          (1 %)
+    dc: vin = 300e-03       (15 %), step = 20e-03          (1 %)
+    dc: vin = 320e-03       (16 %), step = 20e-03          (1 %)
+    dc: vin = 340e-03       (17 %), step = 20e-03          (1 %)
+    dc: vin = 360e-03       (18 %), step = 20e-03          (1 %)
+    dc: vin = 380e-03       (19 %), step = 20e-03          (1 %)
+    dc: vin = 400e-03       (20 %), step = 20e-03          (1 %)
+    dc: vin = 420e-03       (21 %), step = 20e-03          (1 %)
+    dc: vin = 440e-03       (22 %), step = 20e-03          (1 %)
+    dc: vin = 460e-03       (23 %), step = 20e-03          (1 %)
+    dc: vin = 480e-03       (24 %), step = 20e-03          (1 %)
+    dc: vin = 500e-03       (25 %), step = 20e-03          (1 %)
+    dc: vin = 520e-03       (26 %), step = 20e-03          (1 %)
+    dc: vin = 540e-03       (27 %), step = 20e-03          (1 %)
+    dc: vin = 560e-03       (28 %), step = 20e-03          (1 %)
+    dc: vin = 580e-03       (29 %), step = 20e-03          (1 %)
+    dc: vin = 600e-03       (30 %), step = 20e-03          (1 %)
+    dc: vin = 620e-03       (31 %), step = 20e-03          (1 %)
+    dc: vin = 640e-03       (32 %), step = 20e-03          (1 %)
+    dc: vin = 660e-03       (33 %), step = 20e-03          (1 %)
+    dc: vin = 680e-03       (34 %), step = 20e-03          (1 %)
+    dc: vin = 700e-03       (35 %), step = 20e-03          (1 %)
+    dc: vin = 720e-03       (36 %), step = 20e-03          (1 %)
+    dc: vin = 740e-03       (37 %), step = 20e-03          (1 %)
+    dc: vin = 760e-03       (38 %), step = 20e-03          (1 %)
+    dc: vin = 780e-03       (39 %), step = 20e-03          (1 %)
+    dc: vin = 800e-03       (40 %), step = 20e-03          (1 %)
+    dc: vin = 820e-03       (41 %), step = 20e-03          (1 %)
+    dc: vin = 840e-03       (42 %), step = 20e-03          (1 %)
+    dc: vin = 860e-03       (43 %), step = 20e-03          (1 %)
+    dc: vin = 880e-03       (44 %), step = 20e-03          (1 %)
+    dc: vin = 900e-03       (45 %), step = 20e-03          (1 %)
+    dc: vin = 920e-03       (46 %), step = 20e-03          (1 %)
+    dc: vin = 940e-03       (47 %), step = 20e-03          (1 %)
+    dc: vin = 960e-03       (48 %), step = 20e-03          (1 %)
+    dc: vin = 980e-03       (49 %), step = 20e-03          (1 %)
+    dc: vin = 1             (50 %), step = 20e-03          (1 %)
+    dc: vin = 980e-03       (51 %), step = -20e-03         (1 %)
+    dc: vin = 960e-03       (52 %), step = -20e-03         (1 %)
+    dc: vin = 940e-03       (53 %), step = -20e-03         (1 %)
+    dc: vin = 920e-03       (54 %), step = -20e-03         (1 %)
+    dc: vin = 900e-03       (55 %), step = -20e-03         (1 %)
+    dc: vin = 880e-03       (56 %), step = -20e-03         (1 %)
+    dc: vin = 860e-03       (57 %), step = -20e-03         (1 %)
+    dc: vin = 840e-03       (58 %), step = -20e-03         (1 %)
+    dc: vin = 820e-03       (59 %), step = -20e-03         (1 %)
+    dc: vin = 800e-03       (60 %), step = -20e-03         (1 %)
+    dc: vin = 780e-03       (61 %), step = -20e-03         (1 %)
+    dc: vin = 760e-03       (62 %), step = -20e-03         (1 %)
+    dc: vin = 740e-03       (63 %), step = -20e-03         (1 %)
+    dc: vin = 720e-03       (64 %), step = -20e-03         (1 %)
+    dc: vin = 700e-03       (65 %), step = -20e-03         (1 %)
+    dc: vin = 680e-03       (66 %), step = -20e-03         (1 %)
+    dc: vin = 660e-03       (67 %), step = -20e-03         (1 %)
+    dc: vin = 640e-03       (68 %), step = -20e-03         (1 %)
+    dc: vin = 620e-03       (69 %), step = -20e-03         (1 %)
+    dc: vin = 600e-03       (70 %), step = -20e-03         (1 %)
+    dc: vin = 580e-03       (71 %), step = -20e-03         (1 %)
+    dc: vin = 560e-03       (72 %), step = -20e-03         (1 %)
+    dc: vin = 540e-03       (73 %), step = -20e-03         (1 %)
+    dc: vin = 520e-03       (74 %), step = -20e-03         (1 %)
+    dc: vin = 500e-03       (75 %), step = -20e-03         (1 %)
+    dc: vin = 480e-03       (76 %), step = -20e-03         (1 %)
+    dc: vin = 460e-03       (77 %), step = -20e-03         (1 %)
+    dc: vin = 440e-03       (78 %), step = -20e-03         (1 %)
+    dc: vin = 420e-03       (79 %), step = -20e-03         (1 %)
+    dc: vin = 400e-03       (80 %), step = -20e-03         (1 %)
+    dc: vin = 380e-03       (81 %), step = -20e-03         (1 %)
+    dc: vin = 360e-03       (82 %), step = -20e-03         (1 %)
+    dc: vin = 340e-03       (83 %), step = -20e-03         (1 %)
+    dc: vin = 320e-03       (84 %), step = -20e-03         (1 %)
+    dc: vin = 300e-03       (85 %), step = -20e-03         (1 %)
+    dc: vin = 280e-03       (86 %), step = -20e-03         (1 %)
+    dc: vin = 260e-03       (87 %), step = -20e-03         (1 %)
+    dc: vin = 240e-03       (88 %), step = -20e-03         (1 %)
+    dc: vin = 220e-03       (89 %), step = -20e-03         (1 %)
+    dc: vin = 200e-03       (90 %), step = -20e-03         (1 %)
+    dc: vin = 180e-03       (91 %), step = -20e-03         (1 %)
+    dc: vin = 160e-03       (92 %), step = -20e-03         (1 %)
+    dc: vin = 140e-03       (93 %), step = -20e-03         (1 %)
+    dc: vin = 120e-03       (94 %), step = -20e-03         (1 %)
+    dc: vin = 100e-03       (95 %), step = -20e-03         (1 %)
+    dc: vin = 80e-03        (96 %), step = -20e-03         (1 %)
+    dc: vin = 60e-03        (97 %), step = -20e-03         (1 %)
+    dc: vin = 40e-03        (98 %), step = -20e-03         (1 %)
+    dc: vin = 20e-03        (99 %), step = -20e-03         (1 %)
+    dc: vin = 0            (100 %), step = -20e-03         (1 %)
+Total time required for dc analysis `dc': CPU = 109.984 ms, elapsed = 140.421 ms.
+Time accumulated: CPU = 957.854 ms, elapsed = 13.1695 s.
+Peak resident memory used = 65.9 Mbytes.
+
+
+Notice from spectre.
+    96 notices suppressed.
+
+modelParameter: writing model parameter values to rawfile.
+element: writing instance parameter values to rawfile.
+outputParameter: writing output parameter values to rawfile.
+designParamVals: writing netlist parameters to rawfile.
+primitives: writing primitives to rawfile.
+subckts: writing subcircuits to rawfile.

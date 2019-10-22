@@ -1,0 +1,93 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Mon Oct 21 23:13:50 2019"
+"simulator" "spectre"
+"version" "13.1.1.292.isr12"
+"date" "11:13:50 PM, Mon Oct 21, 2019"
+"design" "// Generated for: spectre"
+"signalNameType" "spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"dc-dc" "analysisInst" (
+"dc"
+"dc.dc"
+"PSF"
+""
+("vin")
+"DC Analysis `dc': vin = (0 -> 1)"
+) PROP(
+"data_type" "scalar"
+)
+
+"modelParameter-info" "analysisInst" (
+"info"
+"modelParameter.info"
+"PSF"
+""
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+)
+
+"element-info" "analysisInst" (
+"info"
+"element.info"
+"PSF"
+""
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+)
+
+"outputParameter-info" "analysisInst" (
+"info"
+"outputParameter.info"
+"PSF"
+""
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+)
+
+"designParamVals-info" "analysisInst" (
+"info"
+"designParamVals.info"
+"PSF"
+""
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+)
+
+"primitives-info.primitives" "analysisInst" (
+"info.primitives"
+"primitives.info.primitives"
+"PSF"
+""
+()
+"Circuit Information"
+)
+"subckts-info.subckts" "analysisInst" (
+"info.subckts"
+"subckts.info.subckts"
+"PSF"
+""
+()
+"Circuit Information"
+)

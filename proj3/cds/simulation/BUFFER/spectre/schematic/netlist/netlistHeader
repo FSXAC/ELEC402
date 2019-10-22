@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Oct 21 23:13:35 2019
+// Design library name: ELEC402
+// Design cell name: BUFFER
+// Design view name: schematic
+simulator lang=spectre
+global 0

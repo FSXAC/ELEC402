@@ -1,0 +1,22 @@
+simulator( 'spectre )
+design(	 "/ubc/ece/home/ugrads/p/p5h0b/elec402/ELEC402_projects/proj3/cds/simulation/BUFFER/spectre/schematic/netlist/netlist")
+resultsDir( "/ubc/ece/home/ugrads/p/p5h0b/elec402/ELEC402_projects/proj3/cds/simulation/BUFFER/spectre/schematic" )
+modelFile( 
+    '("/ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/gpdk045/../models/spectre/gpdk045.scs" "tt")
+)
+analysis('dc ?hysteresis t  ?param "vin"  ?start "0"  
+		?stop "vdd"  )
+desVar(	  "vin" 1	)
+desVar(	  "vdd" 1	)
+desVar(	  "CL" 1p	)
+envOption(
+	'analysisOrder  list("dc") 
+)
+temp( 27 ) 
+run()
+modelFile( 
+    '("/ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gpdk045_v_4_0/gpdk045/../models/spectre/gpdk045.scs" "tt")
+)
+run()
+selectResult( 'dc )
+plot(getData("/OUTPUT") getData("/INPUT") )

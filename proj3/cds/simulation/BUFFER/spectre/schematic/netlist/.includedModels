@@ -1,0 +1,3 @@
+simulator lang=spectre
+include "g45n1svt.scs"
+include "g45p1svt.scs"
