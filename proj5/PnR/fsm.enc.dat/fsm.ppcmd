@@ -1,0 +1,62 @@
+# PPCMD 1 
+# addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.44 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -padcore_ring_top_layer_limit Metal3 -spacing 0.2 -merge_stripes_value 0.6 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -stop_x 11.262 -width 0.22 -nets {VDD VSS} -start_x 6.346 -stacked_via_bottom_layer Metal1
+# 3 
+# 2 
+# 1 
+# 0 
+# 0 
+# 2 
+# BOX_LIST 
+# 150 190 51450 47640 0 
+# 1400 1440 50200 46390 0 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 220 2 0 6770 11375 0 0 0 
+# VDD 220 2 0 6350 11375 0 0 0 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+
+# PPCMD 2 
+# sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1 Metal11 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1 Metal11 } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1 Metal11 }
+# 2 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 2 
+
+# PPCMD 3 
+# addRing -skip_via_on_wire_shape Noshape -spacing_bottom 0.25 -width_left 1 -width_bottom 1 -width_top 1 -spacing_top 0.25 -skip_via_on_pin Standardcell -layer_bottom Metal1 -stacked_via_top_layer Metal11 -width_right 1 -type core_rings -jog_distance 0.6 -offset_bottom 0.6 -layer_top Metal1 -threshold 0.6 -offset_left 0.6 -spacing_right 0.25 -spacing_left 0.25 -offset_right 0.6 -offset_top 0.6 -layer_right Metal2 -nets {VDD VSS} -follow core -stacked_via_bottom_layer Metal1 -layer_left Metal2
+# 1 
+# 32 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 1000 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 26300 690 26300 48140 
+# END_RING_PT_INFO_LIST 
+# VSS 1000 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 650 24415 51950 24415 
+# END_RING_PT_INFO_LIST 
+# VDD 1000 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 26300 1940 26300 46890 
+# END_RING_PT_INFO_LIST 
+# VDD 1000 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 1900 24415 50700 24415 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 3 
+

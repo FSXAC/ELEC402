@@ -1,0 +1,130 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream In
+Program   : @(#)$CDS: strmin version 6.1.6-64b 10/30/2014 22:41 (sjfnl119) $
+          : sub-version  IC6.1.6-64b.500.9 
+Started at: 01-Dec-2019  16:00:05
+User Name : p5h0b
+Host Name : ssh-soc
+Directory : /ubc/ece/home/ugrads/p/p5h0b/elec402/ELEC402_projects/proj5/cds
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-107): Existing cells in the target library will be overwritten if the cell names in the Stream file and the target library are the same. To prevent this, set the '-writeMode' option to 'noOverwrite'.
+INFO (XSTRM-217): Reading the layer map file, /ubc/ece/home/ugrads/p/p5h0b/elec402/ELEC402_projects/proj5/cds/../PnR/in/gsclib045.layermap
+INFO (XSTRM-217): Reading the refliblist file, /ubc/ece/home/ugrads/p/p5h0b/elec402/ELEC402_projects/proj5/cds/.cadence/xstream/IN/reflib.list
+INFO (XSTRM-163): You have not used the viaMap option. If a viaMap file, corresponding techfile or technology library exist, then use the -viaMap option for creating oaVia instances in the Streamed-In library. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design. For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options:
+	library				ELEC402
+	strmFile			/ubc/ece/home/ugrads/p/p5h0b/elec402/ELEC402_projects/proj5/PnR/out/fsm.gds
+	logFile				strmIn.log
+	topCell				fsm
+	view				layout
+	case				Preserve
+	layerMap			/ubc/ece/home/ugrads/p/p5h0b/elec402/ELEC402_projects/proj5/cds/../PnR/in/gsclib045.layermap
+	propSeparator			,
+	refLibList				/ubc/ece/home/ugrads/p/p5h0b/elec402/ELEC402_projects/proj5/cds/.cadence/xstream/IN/reflib.list
+
+INFO (XSTRM-284): Data precision might be lost because the value (2000) set for 'dbuPerUU' in the technology database does not match the units (1000) set in the GDSII file.
+WARNING (XSTRM-267): The referenced cell "FILL1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "FILL2" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "FILL4" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "FILL8" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "TIELO" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "AOI21X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "INVX2" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "OAI31X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "AOI33X2" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "OAI33X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "AOI32X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "AOI211XL" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "OAI211X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "DFFSHQX1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "DFFRX1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NAND3XL" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NAND3BX1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NOR3BX1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NOR3BXL" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "AND2XL" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NAND3X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "OAI222X2" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NOR2BX2" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "AOI22X2" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "CLKXOR2X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NAND2BX1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NAND2X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NOR2X4" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NAND2X2" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "OAI21X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "AOI22X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "AO22X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "AOI22XL" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "OA22X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "OR2X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "ADDFX1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NOR2X2" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NOR2X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "AND2X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NOR2BX1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "OR3XL" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "OAI22X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NAND2BX2" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "OAI21XL" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "OA21X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NAND2BXL" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "DFFQXL" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "AOI21XL" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "OAI2BB1X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "OAI221X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "OAI22XL" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "XNOR2X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "OAI222X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "DFFHQX1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "INVX1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NOR2XL" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NOR4X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NAND2XL" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "NOR4X2" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "MX2X1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "SDFFRHQX1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "DFFRHQX1" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+WARNING (XSTRM-267): The referenced cell "CLKBUFX2" was not found. The OpenAccess design data was created for this cell without any reference. Ensure that the referenced cell exists and library is defined in the cds.lib file.
+INFO (XSTRM-220): 1. Translating STRUCTURE M3_M2_VH as cellView ELEC402/M3_M2_VH/layout
+INFO (XSTRM-220): 2. Translating STRUCTURE M2_M1_HV as cellView ELEC402/M2_M1_HV/layout
+INFO (XSTRM-220): 3. Translating STRUCTURE M3_M2_M_NH as cellView ELEC402/M3_M2_M_NH/layout
+INFO (XSTRM-220): 4. Translating STRUCTURE M2_M1_VV as cellView ELEC402/M2_M1_VV/layout
+INFO (XSTRM-220): 5. Translating STRUCTURE M4_M3_HV as cellView ELEC402/M4_M3_HV/layout
+INFO (XSTRM-220): 6. Translating STRUCTURE M3_M2_HH as cellView ELEC402/M3_M2_HH/layout
+INFO (XSTRM-220): 7. Translating STRUCTURE M4_M3_M_EV as cellView ELEC402/M4_M3_M_EV/layout
+INFO (XSTRM-220): 8. Translating STRUCTURE M3_M2_HV as cellView ELEC402/M3_M2_HV/layout
+INFO (XSTRM-220): 9. Translating STRUCTURE M2_M1_HH as cellView ELEC402/M2_M1_HH/layout
+INFO (XSTRM-220): 10. Translating STRUCTURE M3_M2_M_SH as cellView ELEC402/M3_M2_M_SH/layout
+INFO (XSTRM-220): 11. Translating STRUCTURE M4_M3_M_WV as cellView ELEC402/M4_M3_M_WV/layout
+INFO (XSTRM-220): 12. Translating STRUCTURE M5_M4_VH as cellView ELEC402/M5_M4_VH/layout
+INFO (XSTRM-220): 13. Translating STRUCTURE M2_M1_VH as cellView ELEC402/M2_M1_VH/layout
+INFO (XSTRM-220): 14. Translating STRUCTURE M4_M3_VV as cellView ELEC402/M4_M3_VV/layout
+INFO (XSTRM-220): 15. Translating STRUCTURE M3_M2_VV as cellView ELEC402/M3_M2_VV/layout
+INFO (XSTRM-220): 16. Translating STRUCTURE M5_M4_M_NH as cellView ELEC402/M5_M4_M_NH/layout
+INFO (XSTRM-220): 17. Translating STRUCTURE fsm_VIA0 as cellView ELEC402/fsm_VIA0/layout
+INFO (XSTRM-220): 18. Translating STRUCTURE fsm_VIA1 as cellView ELEC402/fsm_VIA1/layout
+INFO (XSTRM-220): 19. Translating STRUCTURE fsm_VIA2 as cellView ELEC402/fsm_VIA2/layout
+INFO (XSTRM-220): 20. Translating STRUCTURE fsm_VIA3 as cellView ELEC402/fsm_VIA3/layout
+INFO (XSTRM-220): 21. Translating STRUCTURE fsm as cellView ELEC402/fsm/layout
+WARNING (XSTRM-36): The objects in the stream layer-datatype '108:0' are ignored. This is because the stream layer-datatype pair is not specified in the layer map file. Specify the stream layer-datatype pair in the layer map file and try again.
+WARNING (XSTRM-36): The objects in the stream layer-datatype '127:0' are ignored. This is because the stream layer-datatype pair is not specified in the layer map file. Specify the stream layer-datatype pair in the layer map file and try again.
+
+Summary of Objects Translated:
+	Instances:                              6226
+	Arrays:                                 0
+	Polygons:                               0
+	Paths:                                  5211
+	PathSegs:                               0
+	Rectangles:                             233
+	Text:                                   0
+	Node:                                   0
+	Line:                                   0
+	Cells:                                  21
+
+Elapsed Time: 2.5s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 5324KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '66' warning(s) found.

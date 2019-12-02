@@ -1,0 +1,23 @@
+; FOR EAD
+envSetVal("layoutEAD" "useSetup" 'string "./.cadence/dfII/EAD/1/setup/gpdk045_ead.ini")
+envSetVal("layoutEAD.gui" "detailedParasiticTables" 'boolean t)
+envSetVal( "layoutEAD" "resistancePathLimit" 'int 10000)
+
+;;------------------------
+;; Controls pin snapping
+;;------------------------
+envSetVal("layoutXL" 	"snapToGrid" 		'boolean t)
+envSetVal("layoutXL" 	"snapToBoundary" 	'boolean t)
+
+; ADE
+envSetVal("asimenv" "saveAsCellview" 'boolean t)
+envSetVal("asimenv" "saveDir" 'string "./.artist_states")
+envSetVal("asimenv.startup" "projectDir" 'string  "./simulation")
+envSetVal("ddserv"	"showWhatsNew"  	'string	"6.1.6")
+
+; SCHEMATICS
+envSetVal("schematic" "netNameMethod" 'cyclic "derived")
+
+; PVS
+envSetVal("msps.layout" "lvsRulesFile" 'string strcat(getShellEnvVar("PDKDIR") "/gpdk045/pvs/pvlLVS.rul"))
+envSetVal("msps.layout" "layerMapFile" 'string strcat(getShellEnvVar("PDKDIR") "/gpdk045/gpdk045/gpdk045.layermap"))
